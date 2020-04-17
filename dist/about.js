@@ -1,5 +1,4 @@
-// Title
-// About 섹션을 헤더에 위치시키기위해 타이틀을 사용하지 않는다. 
+// Title: About 섹션을 헤더에 위치시키기위해 타이틀을 사용하지 않는다. 
 var title = null;
 
 // Content
@@ -13,7 +12,7 @@ var content = paragraphs.map(function (p, i) {
 });
 
 // Get JSX
-element = getSectionJSX({ title: title, content: content });
+var element = React.createElement(Section, { title: title, content: content });
 
 // Render
 ReactDOM.render(element, document.getElementById('about'));

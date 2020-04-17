@@ -1,5 +1,4 @@
-// Title
-// About 섹션을 헤더에 위치시키기위해 타이틀을 사용하지 않는다. 
+// Title: About 섹션을 헤더에 위치시키기위해 타이틀을 사용하지 않는다. 
 const title = null;
 
 // Content
@@ -17,7 +16,7 @@ const paragraphs = [
 const content = paragraphs.map((p, i) => <p key={i}>{p}</p>);
 
 // Get JSX
-element = getSectionJSX({ title, content });
+const element = <Section title={title} content={content}></Section>
 
 // Render
 ReactDOM.render(
