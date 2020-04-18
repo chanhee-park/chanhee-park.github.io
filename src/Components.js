@@ -1,6 +1,6 @@
 
 // Common
-function Section (props) {
+function Container (props) {
   return (
     <div className="container">
       <h2 className="section_title">{props.title}</h2>
@@ -9,7 +9,57 @@ function Section (props) {
   );
 }
 
+// About
+function About (props) {
+  return _.map(props.about, (p, i) => <p key={i}>{p}</p>);
+}
+
+// Experience
+function Experience (props) {
+  const listItems = _.map(props.experiences, (experience, i) => {
+    return (
+      <li key={"experience" + i}>
+        <a href={experience['href']} target="_blank">{experience['where']}</a>
+        <div className='status'>{experience['status']}</div>
+        <div className='period'>{experience['period']}</div>
+        <p>{experience['story']}</p>
+      </li>
+    );
+  });
+  return <ul className="items"> {listItems}</ul>
+}
+
+// Education 
+function Education (props) {
+  const listItems = _.map(props.educations, (education, i) => {
+    return (
+      <li key={"education" + i}>
+        <strong>{education['course']}</strong>
+        <a href={education['href']}>{education['where']}</a>
+        <div className='period'>{education['period']}</div>
+        <p>{education['story']}</p>
+      </li>
+    );
+  });
+  return content = <ul className="items"> {listItems}</ul>
+}
+
 // Research
+function Research (props) {
+  const listItems = _.map(props.researches, (research, i) => {
+    return (
+      <li key={i}>
+        <div className="research_title">{research['title']}</div>
+        <Authors authors={research['authors']} />
+        <div className="conf_title">{research['conf_title']} (<strong>{research['conf_short']}</strong>), 2020.</div>
+        <Materials research={research} fileName={getFileName(research, 'thumb')} />
+        {research['thumb'] && <Thumbnails fileName={getFileName(research, 'thumb')} />}
+      </li >
+    );
+  });
+  return <ul className="items"> {listItems}</ul>
+}
+
 function Materials (props) {
   const research = props.research;
   const fileNameWithDir = "research/" + props.fileName;
