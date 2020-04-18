@@ -73,7 +73,7 @@ const Data = {
       thumb: true,
       pdf: true,
       poster: true,
-      video: true, // ToDO: Add it
+      video: true, // TODO: Add it
     },
     {
       id: 'gitvis',
@@ -85,7 +85,7 @@ const Data = {
       year: '2019',
       thumb: true,
       pdf: true,
-      video: true, // ToDo: Update it
+      video: true, // TODo: Update it
     },
     {
       id: 'visml',
