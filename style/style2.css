@@ -5,9 +5,9 @@
   --clova-green: #05D686;
   --my-beige: #F4F0E6;
   --my-purple: #D9D9F3;
-  --my-green: #CEEFE4;
+  --my-green: #9DD3A8;
   --my-dark-green: #005533;
-  --my-bright-green: #9DD3A8;
+  --my-bright-green: #CEEFE4;
   --my-dark-blue: #123;
   /* font-size */
   --small-font: 14px;
@@ -78,7 +78,7 @@ a {
   font-weight: 900;
   padding-bottom: .25em;
   cursor: pointer;
-  background: linear-gradient(to bottom, var(--my-bright-green) 0%, var(--my-bright-green) 100%);
+  background: linear-gradient(to bottom, var(--my-green) 0%, var(--my-green) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 3px 3px;
@@ -90,7 +90,7 @@ a {
 
 a:hover {
   color: var(--clova-black);
-  background: linear-gradient(to bottom, var(--my-bright-green) 0%, var(--my-bright-green) 100%);
+  background: linear-gradient(to bottom, var(--my-green) 0%, var(--my-green) 100%);
   background-size: 4px 30px;
   background-position: 0 100%;
   background-repeat: repeat-x;
@@ -121,7 +121,7 @@ img {
 /* Introduction */
 
 #intro {
-  background-color: var(--my-green);
+  background-color: var(--my-bright-green);
   margin-bottom: 120px;
 }
 
@@ -138,9 +138,9 @@ img {
 }
 
 #intro img.image--cover {
-  -webkit-box-shadow: 10px 7px 1px 1px var(--my-bright-green);
-  -moz-box-shadow: 10px 7px 1px 1px var(--my-bright-green);
-  box-shadow: 10px 7px 1px 1px var(--my-bright-green);
+  -webkit-box-shadow: 10px 7px 1px 1px var(--my-green);
+  -moz-box-shadow: 10px 7px 1px 1px var(--my-green);
+  box-shadow: 10px 7px 1px 1px var(--my-green);
   width: 180px;
   border-radius: 20px;
 }
@@ -159,7 +159,7 @@ img {
 
 .tag {
   font-size: var(--small-font);
-  background-color: var(--my-bright-green);
+  background-color: var(--my-green);
   margin: 5px;
   padding: 1px 5px;
   border-radius: 5px;
@@ -201,13 +201,17 @@ img {
 .card_title {
   font-size: var(--large-font);
   font-weight: 900;
-  padding: 5px 0;
 }
 
 .card_letter {
   font-size: var(--small-font);
   font-weight: 200;
   color: var(--clova-grey);
+  padding: 10px 0;
+}
+
+.card_letter p {
+  margin: 0;
   padding: 5px 0;
 }
 

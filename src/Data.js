@@ -1,4 +1,18 @@
 const Data = {
+  introCard: {
+    title: '방문해주셔서 감사합니다!',
+    paragraphs: [
+      `복잡한 데이터를 참신한 아이디어로 바꿀 방법을 찾고 계신가요? 
+      저와 함께 프로젝트를 하고 싶은 분은 편하게 연락 주세요.
+      `,
+      (
+        < a href="mailto: chanhee13p@gmail.com" >
+          <i className="fas fa-envelope fa-fw" />
+          <span> chanhee13p@gmail.com</span>
+        </a >
+      )
+    ]
+  },
   about: [
     `제 목표는 복잡한 데이터를 이해하는 장벽을 낮추는 것입니다. 
   특히 제 연구 비전은 '시각화를 통한 머신러닝 모델 해석과 개선'에 있습니다. 

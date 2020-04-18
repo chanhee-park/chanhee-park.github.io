@@ -12,6 +12,39 @@ function Container(props) {
   );
 }
 
+function Card(props) {
+  var title = props.title;
+  var paragraphs = props.paragraphs;
+  var listParagraphs = _.map(paragraphs, function (p, i) {
+    return React.createElement(
+      "p",
+      null,
+      p
+    );
+  });
+  return React.createElement(
+    "div",
+    { className: "card" },
+    React.createElement(
+      "div",
+      { className: "container" },
+      React.createElement(
+        "span",
+        { className: "card_title" },
+        title
+      ),
+      React.createElement(
+        "div",
+        { className: "card_letter" },
+        listParagraphs
+      )
+    )
+  );
+}
+
+// Introduction 
+function Introduction(props) {}
+
 // About
 function About(props) {
   return _.map(props.about, function (p, i) {

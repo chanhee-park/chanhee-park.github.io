@@ -5,6 +5,16 @@ const contents = {
   'research': <Research researches={Data.researches} />
 }
 
+// Render Card
+ReactDOM.render(
+  <Card
+    title={Data.introCard.title}
+    paragraphs={Data.introCard.paragraphs}>
+  </Card>, // element
+  document.getElementById('card-root') // rootId
+);
+
+// Render Sections
 _.forEach(contents, (content, key) => {
   ReactDOM.render(
     <Container title={key.toUpperCase()} content={content} />, // element
@@ -16,3 +26,4 @@ _.forEach(contents, (content, key) => {
 function getFileName (research) {
   return `${research['year']}-${research['short_conf']}-${research['id']}`;
 }
+

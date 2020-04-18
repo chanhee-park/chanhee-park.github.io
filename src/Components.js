@@ -8,6 +8,27 @@ function Container (props) {
   );
 }
 
+function Card (props) {
+  const title = props.title;
+  const paragraphs = props.paragraphs;
+  const listParagraphs = _.map(paragraphs, (p, i) => <p>{p}</p>);
+  return (
+    <div className="card">
+      <div className="container">
+        <span className="card_title">{title}</span>
+        <div className="card_letter">
+          {listParagraphs}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Introduction 
+function Introduction (props) {
+
+}
+
 // About
 function About (props) {
   return _.map(props.about, (p, i) => <p key={i}>{p}</p>);
