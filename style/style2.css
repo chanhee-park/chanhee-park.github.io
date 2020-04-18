@@ -165,6 +165,10 @@ header #about>.container {
   padding: 24px 0;
 }
 
+header #about .section_title {
+  display: none;
+}
+
 /* CARD */
 
 .card {
