@@ -18,7 +18,7 @@ function Card(props) {
   var listParagraphs = _.map(paragraphs, function (p, i) {
     return React.createElement(
       "p",
-      null,
+      { key: i },
       p
     );
   });
@@ -29,7 +29,7 @@ function Card(props) {
       "div",
       { className: "container" },
       React.createElement(
-        "span",
+        "h3",
         { className: "card_title" },
         title
       ),
@@ -41,9 +41,6 @@ function Card(props) {
     )
   );
 }
-
-// Introduction 
-function Introduction(props) {}
 
 // About
 function About(props) {
@@ -57,23 +54,23 @@ function About(props) {
 }
 
 // Experience
-function Experience(props) {
+function Experiences(props) {
   var listItems = _.map(props.experiences, function (experience, i) {
     return React.createElement(
       "li",
       { key: "experience" + i },
+      React.createElement(
+        "span",
+        { className: "status" },
+        experience['status']
+      ),
       React.createElement(
         "a",
         { href: experience['href'], target: "_blank" },
         experience['where']
       ),
       React.createElement(
-        "div",
-        { className: "status" },
-        experience['status']
-      ),
-      React.createElement(
-        "div",
+        "span",
         { className: "period" },
         experience['period']
       ),
@@ -93,23 +90,23 @@ function Experience(props) {
 }
 
 // Education 
-function Education(props) {
+function Educations(props) {
   var listItems = _.map(props.educations, function (education, i) {
     return React.createElement(
       "li",
       { key: "education" + i },
       React.createElement(
-        "strong",
+        "span",
         null,
         education['course']
       ),
       React.createElement(
         "a",
-        { href: education['href'] },
+        { href: education['href'], target: "_blank" },
         education['where']
       ),
       React.createElement(
-        "div",
+        "span",
         { className: "period" },
         education['period']
       ),
@@ -129,37 +126,50 @@ function Education(props) {
 }
 
 // Research
-function Research(props) {
+function Researches(props) {
   var listItems = _.map(props.researches, function (research, i) {
+    var fileName = getFileName(research);
     return React.createElement(
       "li",
-      { key: i },
+      { key: i, className: "researchItem" },
       React.createElement(
         "div",
-        { className: "research_title" },
-        research['title']
-      ),
-      React.createElement(Authors, { authors: research['authors'] }),
-      React.createElement(
-        "div",
-        { className: "conf_title" },
-        research['conf_title'],
-        " (",
+        { className: "flex-outer" },
         React.createElement(
-          "strong",
-          null,
-          research['conf_short']
+          "div",
+          { className: "flex-8 text-zone" },
+          React.createElement(
+            "h3",
+            { className: "research_title" },
+            research['title']
+          ),
+          React.createElement(Authors, { authors: research['authors'] }),
+          React.createElement(
+            "div",
+            { className: "conf_title" },
+            research['conf_title'],
+            " (",
+            React.createElement(
+              "strong",
+              null,
+              research['conf_short']
+            ),
+            "), 2020."
+          ),
+          React.createElement(Materials, { research: research, fileName: fileName })
         ),
-        "), 2020."
-      ),
-      React.createElement(Materials, { research: research, fileName: getFileName(research, 'thumb') }),
-      research['thumb'] && React.createElement(Thumbnails, { fileName: getFileName(research, 'thumb') })
+        React.createElement(
+          "div",
+          { className: "flex-4 image-zone" },
+          research['video'] && React.createElement(VideoThumbnail, { fileName: fileName }),
+          !research['video'] && React.createElement(Thumbnail, { fileName: fileName })
+        )
+      )
     );
   });
   return React.createElement(
     "ul",
     { className: "items" },
-    " ",
     listItems
   );
 }
@@ -198,7 +208,20 @@ function Materials(props) {
   );
 }
 
-function Thumbnails(props) {
+function VideoThumbnail(props) {
+  return React.createElement(
+    "div",
+    { className: "paper_thumbnail" },
+    React.createElement(
+      "video",
+      { autoPlay: true, loop: true, muted: true, preload: "metadata" },
+      React.createElement("source", { src: "research/" + props.fileName + "-video.mp4", type: "video/mp4", alt: "Video of Speak Go" }),
+      ">"
+    )
+  );
+}
+
+function Thumbnail(props) {
   return React.createElement(
     "div",
     { className: "paper_thumbnail" },
@@ -208,13 +231,12 @@ function Thumbnails(props) {
 
 function Authors(props) {
   var listItems = props.authors.map(function (authorName, i) {
-    return authorName == 'Chanhee Park' ? React.createElement(
-      "strong",
-      { className: "my_name", key: i },
-      authorName + ', '
-    ) : React.createElement(
+    var classes = authorName == 'Chanhee Park' ? 'name my-name' : 'name';
+    return React.createElement(
       "span",
-      { key: i },
+      {
+        key: i,
+        className: classes },
       authorName + (i != props.authors.length - 1 ? ', ' : '')
     );
   });

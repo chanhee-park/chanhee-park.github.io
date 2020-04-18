@@ -1,8 +1,8 @@
 var contents = {
   'about': React.createElement(About, { about: Data.about }),
-  'education': React.createElement(Education, { educations: Data.educations }),
-  'experience': React.createElement(Experience, { experiences: Data.experiences }),
-  'research': React.createElement(Research, { researches: Data.researches })
+  'experiences': React.createElement(Experiences, { experiences: Data.experiences }),
+  'educations': React.createElement(Educations, { educations: Data.educations }),
+  'researches': React.createElement(Researches, { researches: Data.researches })
 
   // Render Card
 };ReactDOM.render(React.createElement(Card, {

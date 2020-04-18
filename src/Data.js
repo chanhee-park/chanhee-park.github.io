@@ -51,6 +51,29 @@ const Data = {
       `
     },
   ],
+  educations: [
+    {
+      "course": "석사 과정",
+      "where": "아주대학교 라이프미디어 협동과정",
+      "href": "http://www.ajou.ac.kr/dt/index.jsp",
+      "period": "2019 - 재학 중",
+      "story":
+        `데이터 시각화에 대한 더 심도 깊은 연구를 하기 위해 대학원에 진학했습니다.
+      웹 기반 데이터 분석 시스템, 머신러닝 모델의 성능 평가, 네트워크 시각화를 연구합니다.`
+    },
+    {
+      "course": "학사",
+      "where": "아주대학교 미디어학과",
+      "href": "https://media.ajou.ac.kr/media/index.jsp",
+      "period": "2019 - 2019",
+      "story":
+        `미디어 콘텐츠 기획자이자 개발자로 성장하기 위한 시간이었습니다.
+      프로젝트를 중심으로 진행되었던 학교 생활 덕분에 다양한 지식과 기술을 익힐 수 있었습니다.
+      웹 프론트엔드 개발을 위하여 프로그래밍을 공부했고, 인터페이스 디자인을 수월하게 하기 위해 다양한 어도비 디자인 툴을 익혔습니다.
+      더 좋은 콘텐츠를 만들기 위하여 UX 디자인과 디지털 미디어 심리학을 공부했습니다.
+      `
+    },
+  ],
   researches: [
     {
       id: 'visml',
@@ -60,7 +83,6 @@ const Data = {
       conf_short: "EI'20",
       short_conf: 'ei',
       year: '2020',
-      thumb: 'research/2020-ei-visml-thumb.png',
       code: 'https://github.com/chanhee-park/VisMlic',
       site: 'https://chanhee-park.github.io/VisMlic/',
       video: true,
@@ -87,7 +109,7 @@ const Data = {
       thumb: true,
       pdf: true,
       poster: true,
-      video: true, // TODO: Add it
+      video: true,
     },
     {
       id: 'gitvis',
@@ -99,10 +121,10 @@ const Data = {
       year: '2019',
       thumb: true,
       pdf: true,
-      video: true, // TODo: Update it
+      video: true,
     },
     {
-      id: 'visml',
+      id: 'comdia',
       title: 'ComDia+: An Interactive Visual Analytics System for Comparing, Diagnosing, and Improving Multiclass Classifiers',
       authors: ['Chanhee Park', 'Jina Lee', 'Hyunwoo Han', 'Kyungwon Lee'],
       conf_title: 'IEEE Pacific Visualization Symposium',
@@ -134,27 +156,19 @@ const Data = {
       poster: true,
     }
   ],
-  educations: [
+  projects: [
     {
-      "course": "석사 과정",
-      "where": "아주대학교 라이프미디어 협동과정",
-      "href": "http://www.ajou.ac.kr/dt/index.jsp",
-      "period": "2019-재학 중",
-      "story":
-        `데이터 시각화에 대한 더 심도 깊은 연구를 하기 위해 대학원에 진학했습니다.
-      웹 기반 데이터 분석 시스템, 머신러닝 모델의 성능 평가, 네트워크 시각화를 연구합니다.`
+      id: 'visml',
+      title: 'A Visualization System for Performance Analysis of Image Classification Models',
+      authors: ['Chanhee Park', 'Hyojin Kim', 'Kyungwon Lee'],
+      conf_title: 'IS&T International Symposium on Electronic Imaging',
+      conf_short: "EI'20",
+      short_conf: 'ei',
+      year: '2020',
+      code: 'https://github.com/chanhee-park/VisMlic',
+      site: 'https://chanhee-park.github.io/VisMlic/',
+      video: true,
+      pdf: true,
     },
-    {
-      "course": "학사",
-      "where": "아주대학교 미디어학과",
-      "href": "https://media.ajou.ac.kr/media/index.jsp",
-      "period": "2019-2019",
-      "story":
-        `미디어 콘텐츠 기획자이자 개발자로 성장하기 위한 시간이었습니다.
-      프로젝트를 중심으로 진행되었던 학교 생활 덕분에 다양한 지식과 기술을 익힐 수 있었습니다.
-      웹 프론트엔드 개발을 위하여 프로그래밍을 공부했고, 인터페이스 디자인을 수월하게 하기 위해 다양한 어도비 디자인 툴을 익혔습니다.
-      더 좋은 콘텐츠를 만들기 위하여 UX 디자인과 디지털 미디어 심리학을 공부했습니다.
-      `
-    },
-  ],
+  ]
 }

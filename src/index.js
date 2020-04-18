@@ -1,8 +1,8 @@
 const contents = {
   'about': <About about={Data.about} />,
-  'education': <Education educations={Data.educations} />,
-  'experience': <Experience experiences={Data.experiences} />,
-  'research': <Research researches={Data.researches} />
+  'experiences': <Experiences experiences={Data.experiences} />,
+  'educations': <Educations educations={Data.educations} />,
+  'researches': <Researches researches={Data.researches} />,
 }
 
 // Render Card
