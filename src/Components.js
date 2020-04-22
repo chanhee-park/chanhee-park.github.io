@@ -35,7 +35,7 @@ function Experiences (props) {
     return (
       <li key={"experience" + i}>
         <span className='status'>{experience['status']}</span>
-        <a href={experience['href']} target="_blank">{experience['where']}</a>
+        <a className='whereiwas' href={experience['href']} target="_blank">{experience['where']}</a>
         <span className='period'>{experience['period']}</span>
         <p>{experience['story']}</p>
       </li>
@@ -49,8 +49,8 @@ function Educations (props) {
   const listItems = _.map(props.educations, (education, i) => {
     return (
       <li key={"education" + i}>
-        <span>{education['course']}</span>
-        <a href={education['href']} target="_blank">{education['where']}</a>
+        <span className='status'>{education['course']}</span>
+        <a className='whereiwas' href={education['href']} target="_blank">{education['where']}</a>
         <span className='period'>{education['period']}</span>
         <p>{education['story']}</p>
       </li>

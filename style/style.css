@@ -120,12 +120,25 @@ img {
 }
 
 /* Common */
+.only-mobile {
+  display: none !important;
+}
 
 .container {
   width: 80%;
   max-width: 800px;
   left: 0;
   padding: 48px 0 28px 0;
+}
+
+.center {
+  width: 100%
+}
+
+.center-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-outer {
@@ -161,11 +174,26 @@ span.period {
   color: var(--dark-grey);
 }
 
+
+
+/* Navigation */
+nav {
+  background-color: var(--bright-green);
+  padding: 20px 0 5px 0;
+  text-align: center;
+}
+
+nav a {
+  color: var(--clova-black);
+  font-weight: 100;
+  margin: 0 20px;
+}
+
 /* Introduction */
 
 #intro {
   background-color: var(--bright-green);
-  margin-bottom: 140px;
+  margin-bottom: 160px;
 }
 
 #intro img.image--cover {
@@ -260,11 +288,6 @@ span.period {
 
 .card_letter i {
   margin-top: 2px;
-}
-
-/* EXPERIENCES */
-section#experiences {
-  margin-top: 160px;
 }
 
 /* EDUCATIONS */

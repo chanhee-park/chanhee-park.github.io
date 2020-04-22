@@ -66,7 +66,7 @@ function Experiences(props) {
       ),
       React.createElement(
         "a",
-        { href: experience['href'], target: "_blank" },
+        { className: "whereiwas", href: experience['href'], target: "_blank" },
         experience['where']
       ),
       React.createElement(
@@ -97,12 +97,12 @@ function Educations(props) {
       { key: "education" + i },
       React.createElement(
         "span",
-        null,
+        { className: "status" },
         education['course']
       ),
       React.createElement(
         "a",
-        { href: education['href'], target: "_blank" },
+        { className: "whereiwas", href: education['href'], target: "_blank" },
         education['where']
       ),
       React.createElement(

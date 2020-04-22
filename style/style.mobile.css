@@ -1,0 +1,144 @@
+@media only screen and (min-width: 600px) {
+  .only-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    /* font-size */
+    --small-font: 11px;
+    --defult-font: 14px;
+    --large-font: 18px;
+    --subtitle-font: 24px;
+    --title-font: 36px;
+  }
+
+  .only-mobile {
+    display: block !important;
+  }
+
+  .no-mobile {
+    display: none !important;
+  }
+
+  /* Common */
+  .container {
+    width: 85%;
+    padding: 28px 0 14px 0;
+  }
+
+  span.status,
+  span.period {
+    display: block;
+    margin: 1px 0;
+  }
+
+  span.status {
+    font-size: var(--large-font);
+  }
+
+  .whereiwas {
+    display: inline-block;
+    padding-left: 0;
+    margin: 1px 0;
+  }
+
+  .flex-outer {
+    display: block;
+  }
+
+  .flex-3,
+  .flex-4,
+  .flex-8,
+  .flex-9,
+  .flex-12 {
+    display: inline-block;
+  }
+
+
+  /* Navigation */
+  nav {
+    padding: 10px 0 3px 0;
+  }
+
+  nav a {
+    font-weight: 100;
+    margin: 0 3px;
+  }
+
+  /* Introduction */
+  #intro {
+    margin-bottom: 0;
+  }
+
+  #intro .name {
+    text-align: center;
+  }
+
+  #intro img.image--cover {
+    -webkit-box-shadow: 7px 5px 1px 1px var(--green);
+    -moz-box-shadow: 7px 5px 1px 1px var(--green);
+    box-shadow: 7px 5px 1px 1px var(--green);
+    width: 70%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin: 20px auto 10px auto;
+  }
+
+  #intro #about .container {
+    width: 100%;
+    padding: 12px 0;
+    margin: auto;
+  }
+
+  #intro .mobile-email {
+    display: inline-block;
+  }
+
+  /* Card */
+  .card {
+    display: none;
+  }
+
+  /* Researches */
+  section#researches .paper_thumbnail {
+    padding: 0;
+    margin: 5px 0 10px 0;
+  }
+
+  section#researches .paper_thumbnail img,
+  section#researches .paper_thumbnail video {
+    min-width: 280px;
+    max-width: 580px;
+  }
+}
+
+
+/* PAD */
+@media (min-width: 600px) and (max-width: 800px) {
+
+  section#researches .flex-outer {
+    display: block;
+  }
+
+  section#researches .flex-3,
+  section#researches .flex-4,
+  section#researches .flex-8,
+  section#researches .flex-9,
+  section#researches .flex-12 {
+    display: inline-block;
+  }
+
+  section#researches .paper_thumbnail {
+    padding: 0;
+    margin: 5px 0 10px 0;
+  }
+
+  section#researches .paper_thumbnail img,
+  section#researches .paper_thumbnail video {
+    width: 100%;
+    min-width: 600px;
+    max-width: 800px;
+  }
+}

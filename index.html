@@ -27,6 +27,8 @@
         crossorigin="anonymous">
   <link rel="stylesheet"
         href="style/style.css">
+  <link rel="stylesheet"
+        href="style/style.mobile.css">
   <link rel="icon"
         type="image/png"
         href="https://img.icons8.com/dusk/64/000000/user-male.png">
@@ -34,8 +36,19 @@
 </head>
 
 <body>
-  <nav>
-    <!--TODO: 각 섹션으로 바로 이동하는 네비게이션 바 추가-->
+  <nav class="navbar"
+       id="nav">
+    <div class="menu">
+      <a class="item"
+         href="#experiences">Experiences</a>
+      <a class="item"
+         href="#educations">Educations</a>
+      <a class="item"
+         href="#researches">Researches</a>
+      <a class="item"
+         href="assets/chanhee-resume.pdf"
+         target="_blank">Resume</a>
+    </div>
   </nav>
 
   <main>
@@ -45,17 +58,31 @@
 
       <div class="container">
         <h1 class="name">Chan-Hee Park</h1>
+        <div class="center">
+          <img class="image--cover only-mobile center-content"
+               src="assets/chanhee-profile.jpg"
+               alt="Photo of Chanhee">
+        </div>
+
 
         <div class="flex-outer">
+
           <div class="flex-9">
             <section class="about"
                      id="about">
             </section>
+            <div class="only-mobile">
+              <a href="mailto: chanhee13p@gmail.com"
+                 class=" mobile-email">
+                <i class="fas fa-envelope fa-fw"></i>
+                <span>chanhee13p@gmail.com</span>
+              </a>
+            </div>
           </div>
-          <div class="flex-3">
+          <div class="flex-3 no-mobile">
             <div class="center">
-              <img class="image--cover"
-                   src="images/chanhee-profile.jpg"
+              <img class="image--cover center-content"
+                   src="assets/chanhee-profile.jpg"
                    alt="Photo of Chanhee">
             </div>
             <ul class="tags">
