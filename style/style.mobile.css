@@ -147,7 +147,7 @@
   section#researches .paper_thumbnail img,
   section#researches .paper_thumbnail video {
     width: 100%;
-    min-width: 600px;
+    min-width: 400px;
     max-width: 800px;
   }
 }
