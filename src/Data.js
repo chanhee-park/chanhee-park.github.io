@@ -50,6 +50,7 @@ const Data = {
       참여한 프로젝트에서는 주로 웹 프론트엔드와 데이터 시각화 개발을 맡았습니다.
       `
     },
+    // TODO: 미디어 인더스트리 링크 추가하기
   ],
   educations: [
     {
@@ -86,6 +87,7 @@ const Data = {
       code: 'https://github.com/chanhee-park/VisMlic',
       site: 'https://chanhee-park.github.io/VisMlic/',
       video: true,
+      gif: true,
       pdf: true,
     },
     {
@@ -110,6 +112,7 @@ const Data = {
       pdf: true,
       poster: true,
       video: true,
+      gif: true,
     },
     {
       id: 'gitvis',
@@ -122,6 +125,7 @@ const Data = {
       thumb: true,
       pdf: true,
       video: true,
+      gif: true,
     },
     {
       id: 'comdia',
@@ -156,6 +160,8 @@ const Data = {
       poster: true,
     }
   ],
+  // TODO: 출판되지 않은 프로젝트 소개하기
+  // MIL, 경찰청-이종데이터, 삼성전자-서머노트, 총장평가, art-arc-paper, 셀피분석, 건강한 레시피
   projects: [
     {
       id: 'visml',
@@ -168,6 +174,7 @@ const Data = {
       code: 'https://github.com/chanhee-park/VisMlic',
       site: 'https://chanhee-park.github.io/VisMlic/',
       video: true,
+      gif: true,
       pdf: true,
     },
   ]

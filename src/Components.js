@@ -63,6 +63,7 @@ function Educations (props) {
 function Researches (props) {
   const listItems = _.map(props.researches, (research, i) => {
     const fileName = getFileName(research);
+    const thumbType = research['gif'] ? 'gif' : 'png';
     return (
       <li key={i} className="researchItem">
         <div className="flex-outer">
@@ -73,8 +74,7 @@ function Researches (props) {
             <Materials research={research} fileName={fileName} />
           </div>
           <div className="flex-4 image-zone">
-            {research['video'] && <VideoThumbnail fileName={fileName} />}
-            {!research['video'] && <Thumbnail fileName={fileName} />}
+            {<Thumbnail fileName={fileName} fileType={thumbType} />}
           </div>
         </div>
       </li >
@@ -85,7 +85,7 @@ function Researches (props) {
 
 function Materials (props) {
   const research = props.research;
-  const fileNameWithDir = "research/" + props.fileName;
+  const fileNameWithDir = "researches/" + props.fileName;
   return (<div className="materials">
     {research['pdf'] && <a href={fileNameWithDir + ".pdf"} target="_blank">Paper</a>}
     {research['poster'] && <a href={fileNameWithDir + "-poster.pdf"} target="_blank">Poster</a>}
@@ -95,20 +95,10 @@ function Materials (props) {
   </div>);
 }
 
-function VideoThumbnail (props) {
-  return (
-    <div className="paper_thumbnail">
-      <video autoPlay loop muted preload="metadata" >
-        <source src={"research/" + props.fileName + "-video.mp4"} type="video/mp4" alt="Video of Speak Go" />>
-      </video>
-    </div>
-  );
-}
-
 function Thumbnail (props) {
   return (
     <div className="paper_thumbnail">
-      <img src={"research/" + props.fileName + "-thumb.png"} />
+      <img src={"researches/" + props.fileName + "-thumb." + props.fileType} />
     </div>
   );
 }

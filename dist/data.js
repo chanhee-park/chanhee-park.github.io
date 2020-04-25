@@ -50,6 +50,7 @@ var Data = {
     code: 'https://github.com/chanhee-park/VisMlic',
     site: 'https://chanhee-park.github.io/VisMlic/',
     video: true,
+    gif: true,
     pdf: true
   }, {
     id: 'color',
@@ -71,7 +72,8 @@ var Data = {
     thumb: true,
     pdf: true,
     poster: true,
-    video: true
+    video: true,
+    gif: true
   }, {
     id: 'gitvis',
     title: 'GitViz: An Interactive Visualization System for Analyzing Development Trends in the Open- Source Software Community',
@@ -82,7 +84,8 @@ var Data = {
     year: '2019',
     thumb: true,
     pdf: true,
-    video: true
+    video: true,
+    gif: true
   }, {
     id: 'comdia',
     title: 'ComDia+: An Interactive Visual Analytics System for Comparing, Diagnosing, and Improving Multiclass Classifiers',
@@ -113,6 +116,8 @@ var Data = {
     pdf: true,
     poster: true
   }],
+  // TODO: 출판되지 않은 프로젝트 소개하기
+  // MIL, 경찰청-이종데이터, 삼성전자-서머노트, 총장평가, art-arc-paper, 셀피분석, 건강한 레시피
   projects: [{
     id: 'visml',
     title: 'A Visualization System for Performance Analysis of Image Classification Models',
@@ -124,6 +129,7 @@ var Data = {
     code: 'https://github.com/chanhee-park/VisMlic',
     site: 'https://chanhee-park.github.io/VisMlic/',
     video: true,
+    gif: true,
     pdf: true
   }]
 };

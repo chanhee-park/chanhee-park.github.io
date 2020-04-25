@@ -129,6 +129,7 @@ function Educations(props) {
 function Researches(props) {
   var listItems = _.map(props.researches, function (research, i) {
     var fileName = getFileName(research);
+    var thumbType = research['gif'] ? 'gif' : 'png';
     return React.createElement(
       "li",
       { key: i, className: "researchItem" },
@@ -161,8 +162,7 @@ function Researches(props) {
         React.createElement(
           "div",
           { className: "flex-4 image-zone" },
-          research['video'] && React.createElement(VideoThumbnail, { fileName: fileName }),
-          !research['video'] && React.createElement(Thumbnail, { fileName: fileName })
+          React.createElement(Thumbnail, { fileName: fileName, fileType: thumbType })
         )
       )
     );
@@ -176,7 +176,7 @@ function Researches(props) {
 
 function Materials(props) {
   var research = props.research;
-  var fileNameWithDir = "research/" + props.fileName;
+  var fileNameWithDir = "researches/" + props.fileName;
   return React.createElement(
     "div",
     { className: "materials" },
@@ -208,24 +208,11 @@ function Materials(props) {
   );
 }
 
-function VideoThumbnail(props) {
-  return React.createElement(
-    "div",
-    { className: "paper_thumbnail" },
-    React.createElement(
-      "video",
-      { autoPlay: true, loop: true, muted: true, preload: "metadata" },
-      React.createElement("source", { src: "research/" + props.fileName + "-video.mp4", type: "video/mp4", alt: "Video of Speak Go" }),
-      ">"
-    )
-  );
-}
-
 function Thumbnail(props) {
   return React.createElement(
     "div",
     { className: "paper_thumbnail" },
-    React.createElement("img", { src: "research/" + props.fileName + "-thumb.png" })
+    React.createElement("img", { src: "researches/" + props.fileName + "-thumb." + props.fileType })
   );
 }
 
