@@ -8,6 +8,11 @@ function Container(props) {
       { className: "section_title" },
       props.title
     ),
+    props.description && React.createElement(
+      "p",
+      { className: "descriptsion section_description" },
+      props.description
+    ),
     props.content
   );
 }
@@ -155,14 +160,16 @@ function Researches(props) {
               null,
               research['conf_short']
             ),
-            "), 2020."
+            "), ",
+            research['year'],
+            "."
           ),
-          React.createElement(Materials, { research: research, fileName: fileName })
+          React.createElement(Materials, { project: research, fileName: fileName, projectType: "researches" })
         ),
         React.createElement(
           "div",
           { className: "flex-4 image-zone" },
-          React.createElement(Thumbnail, { fileName: fileName, fileType: thumbType })
+          React.createElement(Thumbnail, { fileName: fileName, fileType: thumbType, projectType: "researches" })
         )
       )
     );
@@ -174,35 +181,86 @@ function Researches(props) {
   );
 }
 
+// Projects
+function Projects(props) {
+  var listItems = _.map(props.projects, function (project, i) {
+    var fileName = project['id'];
+    var thumbType = project['gif'] ? 'gif' : 'png';
+    return React.createElement(
+      "li",
+      { key: i, className: "projectItem" },
+      React.createElement(
+        "div",
+        { className: "flex-outer" },
+        React.createElement(
+          "div",
+          { className: "flex-8 text-zone" },
+          React.createElement(
+            "h3",
+            { className: "project_title" },
+            project['title']
+          ),
+          React.createElement(
+            "div",
+            { className: "project_year" },
+            " ",
+            project['year'],
+            "."
+          ),
+          React.createElement(
+            "div",
+            { className: "project_description" },
+            " ",
+            project['description']
+          ),
+          React.createElement(Materials, { project: project, fileName: fileName, projectType: "projects" })
+        ),
+        React.createElement(
+          "div",
+          { className: "flex-4 image-zone" },
+          React.createElement(Thumbnail, { fileName: fileName, fileType: thumbType, projectType: "projects" })
+        )
+      )
+    );
+  });
+  return React.createElement(
+    "ul",
+    { className: "items" },
+    listItems
+  );
+}
+
+// Research & Projects
 function Materials(props) {
-  var research = props.research;
-  var fileNameWithDir = "researches/" + props.fileName;
+  var project = props.project;
+  var type = props.projectType;
+  var fileNameWithDir = "assets/" + type + "/" + props.fileName;
   return React.createElement(
     "div",
     { className: "materials" },
-    research['pdf'] && React.createElement(
+    project['pdf'] && React.createElement(
       "a",
       { href: fileNameWithDir + ".pdf", target: "_blank" },
       "Paper"
     ),
-    research['poster'] && React.createElement(
+    project['poster'] && React.createElement(
       "a",
       { href: fileNameWithDir + "-poster.pdf", target: "_blank" },
       "Poster"
     ),
-    research['video'] && React.createElement(
+    project['video'] && React.createElement(
       "a",
       { href: fileNameWithDir + "-video.mp4", target: "_blank" },
       "Video"
     ),
-    research['code'] && React.createElement(
+    project['code'] && React.createElement(
       "a",
-      { href: research['code'], target: "_blank" },
+      { href: project['code'], target: "_blank" },
       "Code"
     ),
-    research['site'] && React.createElement(
+    project['site'] && React.createElement(
       "a",
-      { href: research['site'], target: "_blank" },
+      { href: project['site'], target: "_blank" },
       "Site"
     )
   );
@@ -212,7 +270,7 @@ function Thumbnail(props) {
   return React.createElement(
     "div",
     { className: "paper_thumbnail" },
-    React.createElement("img", { src: "researches/" + props.fileName + "-thumb." + props.fileType })
+    React.createElement("img", { src: "assets/" + props.projectType + "/" + props.fileName + "-thumb." + props.fileType })
   );
 }
 

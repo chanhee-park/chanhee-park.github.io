@@ -38,10 +38,22 @@ const Data = {
       `
     },
     {
+      "where": "아주대학교 미디어학과 대학특성사업단",
+      "status": "Software Developer & Researcher",
+      "href": "http://media-jobs.ajou.ac.kr/wordpress/",
+      "period": "2018.03 - 2019.08",
+      "story": `
+      학생들의 진로 및 학습 설계를 보조하는 웹 서비스인 미디어-인더스트리 링크의 유지 보수를 맡았습니다.
+      수업 커리큘럼 탐색 페이지와 선후배 질문 답변 개시판 등을 관리했습니다.  
+      웹 서비스 유지 보수 외에도 서비스 기획과 평가 업무를 진행했습니다. 
+      수업 시간에 배운 웹 개발 기술과 UX 디자인 프로세스를 실제 프로젝트에 적용해볼 수 있는 기회였습니다.
+      `
+    },
+    {
       "where": "(주) 더더랩",
       "status": "Software Membership & Intern",
       "href": "https://www.thethelab.io/",
-      "period": "2017.04 - 2019.02",
+      "period": "2017.04 - 2019.08",
       "story": `
       더더랩은 소프트웨어를 개발하고 공급하는 회사입니다.
       저는 이 회사에서 웹 프론트엔드 개발자로서 역량을 갈고 닦았습니다.
@@ -50,7 +62,7 @@ const Data = {
       참여한 프로젝트에서는 주로 웹 프론트엔드와 데이터 시각화 개발을 맡았습니다.
       `
     },
-    // TODO: 미디어 인더스트리 링크 추가하기
+
   ],
   educations: [
     {
@@ -160,18 +172,38 @@ const Data = {
       poster: true,
     }
   ],
-  // TODO: 출판되지 않은 프로젝트 소개하기
-  // MIL, 경찰청-이종데이터, 삼성전자-서머노트, 총장평가, art-arc-paper, 셀피분석, 건강한 레시피
   projects: [
     {
-      id: 'visml',
-      title: 'A Visualization System for Performance Analysis of Image Classification Models',
-      authors: ['Chanhee Park', 'Hyojin Kim', 'Kyungwon Lee'],
-      conf_title: 'IS&T International Symposium on Electronic Imaging',
-      conf_short: "EI'20",
-      short_conf: 'ei',
-      year: '2020',
-      code: 'https://github.com/chanhee-park/VisMlic',
+      id: 'police',
+      title: '이종데이터 연계 네트워크 시각화',
+      description: `
+        대한민국 경찰청 및 한국전자통신연구원과 함께 대용량 네트워크 시각화 툴을 개발했습니다. 
+        실시간으로 대용량 네트워크를 시각화할 수 있도록 유닛 기반 시각화 디자인과 WebGL 기술을 사용하였습니다.
+      `,
+      year: '2019.08 - 2019.11',
+      gif: true,
+    },
+    {
+      id: 'summar',
+      title: '회의 요약 및 관리 서비스 개발',
+      description: `
+        삼성전자 C-Lab의 외주를 받아 회의 요약 및 관리 어플리케이션을 개발했습니다.
+        요약된 회의 내용을 API로 전달받아 대시보드와 마인드맵, 내러티브 차트 등을 통해 효과적으로 회의 내용을 요약해 시각화 했습니다.
+        (주)더더랩에서 인턴십으로 근무하고 있을 때 진행된 프로젝트입니다. 
+        이 프로젝트에 참여하는 동안 vue, firebase, typescript 등 최신 웹 개발 기술을 실무에 적용해 볼 수 있었습니다.
+      `,
+      year: '2019.03 - 2019.07',
+    },
+    {
+      id: 'MIL',
+      title: '미디어 인더스트리 링크 웹 서비스 유지 보수',
+      description: `
+        아주대학교 미디어학과 대학특성화사업단에 계약직으로 고용되어 웹 프론트앤드 개발 및 서비스 기획 업무를 맡았습니다. 
+        대학생의 진로 및 학습 설계를 돕기 위한 웹 기반의 콘텐츠 제공하는 웹 서비스를 설계하고 개발했습니다.
+        워드프레스로 제작된 웹 사이트에 게시판 및 설문조사 기능등을 추가하고 UI를 변경했습니다. 
+        사용 사례를 수집하거나 사용자 인터뷰를 진행하며 서비스를 기획하고 평가하며 전반적인 웹 서비스 개발 루틴을 경험했습니다.
+      `,
+      year: '2018.03 - 2019.08',
       site: 'https://chanhee-park.github.io/VisMlic/',
       video: true,
       gif: true,

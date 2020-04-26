@@ -3,6 +3,7 @@ function Container (props) {
   return (
     <div className="container">
       <h2 className="section_title">{props.title}</h2>
+      {props.description && <p className="descriptsion section_description">{props.description}</p>}
       {props.content}
     </div>
   );
@@ -70,11 +71,11 @@ function Researches (props) {
           <div className="flex-8 text-zone">
             <h3 className="research_title">{research['title']}</h3>
             <Authors authors={research['authors']} />
-            <div className="conf_title">{research['conf_title']} (<strong>{research['conf_short']}</strong>), 2020.</div>
-            <Materials research={research} fileName={fileName} />
+            <div className="conf_title">{research['conf_title']} (<strong>{research['conf_short']}</strong>), {research['year']}.</div>
+            <Materials project={research} fileName={fileName} projectType='researches' />
           </div>
           <div className="flex-4 image-zone">
-            {<Thumbnail fileName={fileName} fileType={thumbType} />}
+            {<Thumbnail fileName={fileName} fileType={thumbType} projectType="researches" />}
           </div>
         </div>
       </li >
@@ -83,22 +84,48 @@ function Researches (props) {
   return <ul className="items">{listItems}</ul>;
 }
 
+// Projects
+function Projects (props) {
+  const listItems = _.map(props.projects, (project, i) => {
+    const fileName = project['id'];
+    const thumbType = project['gif'] ? 'gif' : 'png';
+    return (
+      <li key={i} className="projectItem">
+        <div className="flex-outer">
+          <div className="flex-8 text-zone">
+            <h3 className="project_title">{project['title']}</h3>
+            <div className="project_year"> {project['year']}.</div>
+            <div className="project_description"> {project['description']}</div>
+            <Materials project={project} fileName={fileName} projectType='projects' />
+          </div>
+          <div className="flex-4 image-zone">
+            {<Thumbnail fileName={fileName} fileType={thumbType} projectType="projects" />}
+          </div>
+        </div>
+      </li >
+    );
+  });
+  return <ul className="items">{listItems}</ul>;
+}
+
+// Research & Projects
 function Materials (props) {
-  const research = props.research;
-  const fileNameWithDir = "researches/" + props.fileName;
+  const project = props.project;
+  const type = props.projectType;
+  const fileNameWithDir = "assets/" + type + "/" + props.fileName;
   return (<div className="materials">
-    {research['pdf'] && <a href={fileNameWithDir + ".pdf"} target="_blank">Paper</a>}
-    {research['poster'] && <a href={fileNameWithDir + "-poster.pdf"} target="_blank">Poster</a>}
-    {research['video'] && <a href={fileNameWithDir + "-video.mp4"} target="_blank">Video</a>}
-    {research['code'] && <a href={research['code']} target="_blank">Code</a>}
-    {research['site'] && <a href={research['site']} target="_blank">Site</a>}
+    {project['pdf'] && <a href={fileNameWithDir + ".pdf"} target="_blank">Paper</a>}
+    {project['poster'] && <a href={fileNameWithDir + "-poster.pdf"} target="_blank">Poster</a>}
+    {project['video'] && <a href={fileNameWithDir + "-video.mp4"} target="_blank">Video</a>}
+    {project['code'] && <a href={project['code']} target="_blank">Code</a>}
+    {project['site'] && <a href={project['site']} target="_blank">Site</a>}
   </div>);
 }
 
 function Thumbnail (props) {
   return (
     <div className="paper_thumbnail">
-      <img src={"researches/" + props.fileName + "-thumb." + props.fileType} />
+      <img src={"assets/" + props.projectType + "/" + props.fileName + "-thumb." + props.fileType} />
     </div>
   );
 }
