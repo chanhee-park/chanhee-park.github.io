@@ -30,11 +30,11 @@
 
   a span {
     margin: 0 1px;
-    display: inline-block;
+    display: inline;
   }
 
   a i {
-    display: inline-block;
+    display: inline;
   }
 
   span.status,
