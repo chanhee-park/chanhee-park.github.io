@@ -204,8 +204,7 @@ function Projects(props) {
             "div",
             { className: "project_year" },
             " ",
-            project['year'],
-            "."
+            project['year']
           ),
           React.createElement(
             "div",

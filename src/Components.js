@@ -94,7 +94,7 @@ function Projects (props) {
         <div className="flex-outer">
           <div className="flex-8 text-zone">
             <h3 className="project_title">{project['title']}</h3>
-            <div className="project_year"> {project['year']}.</div>
+            <div className="project_year"> {project['year']}</div>
             <div className="project_description"> {project['description']}</div>
             <Materials project={project} fileName={fileName} projectType='projects' />
           </div>
