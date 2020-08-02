@@ -79,7 +79,7 @@ const Data = {
       "course": "학사",
       "where": "아주대학교 미디어학과",
       "href": "https://media.ajou.ac.kr/media/index.jsp",
-      "period": "2019 - 2019",
+      "period": "2015 - 2019",
       "story":
         `미디어 콘텐츠 기획자이자 개발자로 성장하기 위한 시간이었습니다.
       프로젝트를 중심으로 진행되었던 학교 생활 덕분에 다양한 지식과 기술을 익힐 수 있었습니다.
