@@ -18,15 +18,13 @@ function Container(props) {
 }
 
 function Card(props) {
-  var title = props.title;
-  var paragraphs = props.paragraphs;
-  var listParagraphs = _.map(paragraphs, function (p, i) {
-    return React.createElement(
-      "p",
-      { key: i },
-      p
-    );
-  });
+  const title = props.title;
+  const paragraphs = props.paragraphs;
+  const listParagraphs = _.map(paragraphs, (p, i) => React.createElement(
+    "p",
+    { key: i },
+    p
+  ));
   return React.createElement(
     "div",
     { className: "card" },
@@ -49,18 +47,16 @@ function Card(props) {
 
 // About
 function About(props) {
-  return _.map(props.about, function (p, i) {
-    return React.createElement(
-      "p",
-      { key: i },
-      p
-    );
-  });
+  return _.map(props.about, (p, i) => React.createElement(
+    "p",
+    { key: i },
+    p
+  ));
 }
 
 // Experience
 function Experiences(props) {
-  var listItems = _.map(props.experiences, function (experience, i) {
+  const listItems = _.map(props.experiences, (experience, i) => {
     return React.createElement(
       "li",
       { key: "experience" + i },
@@ -96,7 +92,7 @@ function Experiences(props) {
 
 // Education 
 function Educations(props) {
-  var listItems = _.map(props.educations, function (education, i) {
+  const listItems = _.map(props.educations, (education, i) => {
     return React.createElement(
       "li",
       { key: "education" + i },
@@ -132,9 +128,9 @@ function Educations(props) {
 
 // Research
 function Researches(props) {
-  var listItems = _.map(props.researches, function (research, i) {
-    var fileName = getFileName(research);
-    var thumbType = research['gif'] ? 'gif' : 'png';
+  const listItems = _.map(props.researches, (research, i) => {
+    const fileName = getFileName(research);
+    const thumbType = research['gif'] ? 'gif' : 'png';
     return React.createElement(
       "li",
       { key: i, className: "researchItem" },
@@ -183,9 +179,9 @@ function Researches(props) {
 
 // Projects
 function Projects(props) {
-  var listItems = _.map(props.projects, function (project, i) {
-    var fileName = project['id'];
-    var thumbType = project['gif'] ? 'gif' : 'png';
+  const listItems = _.map(props.projects, (project, i) => {
+    const fileName = project['id'];
+    const thumbType = project['gif'] ? 'gif' : 'png';
     return React.createElement(
       "li",
       { key: i, className: "projectItem" },
@@ -231,9 +227,9 @@ function Projects(props) {
 
 // Research & Projects
 function Materials(props) {
-  var project = props.project;
-  var type = props.projectType;
-  var fileNameWithDir = "assets/" + type + "/" + props.fileName;
+  const project = props.project;
+  const type = props.projectType;
+  const fileNameWithDir = "assets/" + type + "/" + props.fileName;
   return React.createElement(
     "div",
     { className: "materials" },
@@ -274,8 +270,8 @@ function Thumbnail(props) {
 }
 
 function Authors(props) {
-  var listItems = props.authors.map(function (authorName, i) {
-    var classes = authorName == 'Chanhee Park' ? 'name my-name' : 'name';
+  const listItems = props.authors.map((authorName, i) => {
+    const classes = authorName == 'Chanhee Park' ? 'name my-name' : 'name';
     return React.createElement(
       "span",
       {

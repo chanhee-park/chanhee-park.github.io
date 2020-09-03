@@ -1,3 +1,7 @@
+// Babel setup for react: 
+// https://babeljs.io/docs/en/6.26.3/babel-preset-react
+// npx babel src --out-dir dist --watch
+
 const contents = {
   'about': <About about={Data.about} />,
   'experiences': <Experiences experiences={Data.experiences} />,

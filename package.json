@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/chanhee-park/chanhee-park.github.io#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "braces": "^3.0.2",
     "kind-of": "^6.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
   }
 }

@@ -27,20 +27,27 @@ const Data = {
   ],
   experiences: [
     {
+      "where": "Naver Clova AI",
+      "status": "Software Developer (Intern)",
+      "href": "https://clova.ai/ko",
+      "period": "2020.09 - 진행 중",
+      "story": ``
+    },
+    {
       "where": "UC Davis VIDI Labs",
       "status": "Visiting Researcher",
       "href": "https://vidi.cs.ucdavis.edu/",
-      "period": "2020.03 - 현재",
+      "period": "2020.03 - 2020.08",
       "story": `
       VIDI Labs 는 캘리포니아 주립대학 데이비스 캠퍼스 컴퓨터공학과의 데이터 시각화 연구실입니다.
       데이터 시각화 분야의 권위있는 연구자이신 Kwan-Liu Ma 교수님의 지도 아래서 
-      머신러닝 모델의 성능 평가 연구와 대용량 네트워크 비교를 위한 시각화 연구를 수행하고 있습니다.
-      이곳에서 연구하는 동안 연구의 가치를 판단하는 안목과 영어 실력을 향상시켜 글로벌 인재가 되고자 합니다.
+      머신러닝 모델의 성능 평가 연구와 대용량 네트워크 비교를 위한 시각화 연구를 수행했습니다.
+      연구의 가치를 판단하는 안목을 길르고 영어 실력을 향상시켜 글로벌 인재에 한발 발돋움했습니다.
       `
     },
     {
       "where": "아주대학교 미디어학과 대학특성사업단",
-      "status": "Software Developer & Researcher",
+      "status": "Web FE Developer",
       "href": "http://media-jobs.ajou.ac.kr/wordpress/",
       "period": "2018.03 - 2019.08",
       "story": `
@@ -52,7 +59,7 @@ const Data = {
     },
     {
       "where": "(주) 더더랩",
-      "status": "Software Membership & Intern",
+      "status": "Web FE Developer (Membership & Intern)",
       "href": "https://www.thethelab.io/",
       "period": "2017.04 - 2019.08",
       "story": `
