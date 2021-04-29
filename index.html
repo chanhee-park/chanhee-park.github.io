@@ -1,148 +1,128 @@
 <!DOCTYPE html>
 <html>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
 
-<head profile="http://www.w3.org/2005/10/profile">
-  <meta charset="UTF-8" />
+    <title>Chan-Hee Park</title>
 
-  <title>Chan-Hee Park</title>
+    <meta name="description" content="Chan-Hee Park" />
+    <meta
+      name="keywords"
+      content="Chanhee Park, Chanhee, Chan-Hee Park, Chan-Hee, 박찬희, Ajou University, data, visualization, information visualization, visual analytics, machine learning, deep learning, HCI"
+    />
+    <meta name="author" content="Chan-Hee Park" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Chan-Hee Park" />
+    <meta property="og:title" content="박찬희의 포트폴리오" />
+    <meta
+      property="og:description"
+      content="데이터 시각화 연구자 & 웹 프론트엔드 개발자"
+    />
+    <meta property="og:image" content="assets/webpage-preview.jpg" />
 
-  <meta name="description"
-        content="Chan-Hee Park" />
-  <meta name="keywords"
-        content="Chanhee Park, Chanhee, Chan-Hee Park, Chan-Hee, 박찬희, Ajou University, data, visualization, information visualization, visual analytics, machine learning, deep learning, HCI" />
-  <meta name="author"
-        content="Chan-Hee Park" />
-  <meta http-equiv="content-type"
-        content="text/html;charset=UTF-8" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <meta property="og:site_name"
-        content="Chan-Hee Park" />
-  <meta property="og:title"
-        content="박찬희의 포트폴리오" />
-  <meta property="og:description"
-        content="데이터 시각화 연구자 & 웹 프론트엔드 개발자" />
-  <meta property="og:image"
-        content="assets/webpage-preview.jpg">
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style.mobile.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/dusk/64/000000/user-male.png"
+    />
 
+    <!-- Libs -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  </head>
 
-
-  <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js'></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-  <link rel="stylesheet"
-        href="style/style.css">
-  <link rel="stylesheet"
-        href="style/style.mobile.css">
-  <link rel="icon"
-        type="image/png"
-        href="https://img.icons8.com/dusk/64/000000/user-male.png">
-
-</head>
-
-<body>
-  <nav class="navbar"
-       id="nav">
-    <div class="menu">
-      <a class="item"
-         href="#experiences">Experiences</a>
-      <a class="item"
-         href="#educations">Educations</a>
-      <a class="item"
-         href="#researches">Researches</a>
-      <a class="item"
-         href="assets/chanhee-resume.pdf"
-         target="_blank">Resume</a>
-    </div>
-  </nav>
-
-  <main>
-    <section class="
-              intro"
-             id="intro">
-
-      <div class="container">
-        <h1 class="name">Chan-Hee Park</h1>
-        <div class="center">
-          <img class="image--cover only-mobile center-content"
-               src="assets/chanhee-profile.jpg"
-               alt="Photo of Chanhee">
-        </div>
-
-
-        <div class="flex-outer">
-
-          <div class="flex-9">
-            <section class="about"
-                     id="about">
-            </section>
-            <div class="only-mobile">
-              <a href="mailto: chanhee13p@gmail.com"
-                 class=" mobile-email">
-                <i class="fas fa-envelope fa-fw"></i>
-                <span>chanhee13p@gmail.com</span>
-              </a>
-            </div>
-          </div>
-          <div class="flex-3 no-mobile">
-            <div class="center">
-              <img class="image--cover center-content"
-                   src="assets/chanhee-profile.jpg"
-                   alt="Photo of Chanhee">
-            </div>
-            <ul class="tags">
-              <li class="tag">#Data_Visualization</li>
-              <li class="tag">#Web_Front_End</li>
-              <li class="tag">#Meachine_Learning</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card-root"
-             id="card-root"></div>
+  <body>
+    <nav class="navbar" id="nav">
+      <div class="menu">
+        <a class="item" href="#experiences">Experiences</a>
+        <a class="item" href="#educations">Educations</a>
+        <a class="item" href="#researches">Researches</a>
+        <a class="item" href="assets/chanhee-resume.pdf" target="_blank"
+          >Resume</a
+        >
       </div>
-    </section>
+    </nav>
 
-    <section class="experiences"
-             id="experiences">
-    </section>
+    <main>
+      <section class="intro" id="intro">
+        <div class="container">
+          <h1 class="name">Chan-Hee Park</h1>
+          <div class="center">
+            <img
+              class="image--cover only-mobile center-content"
+              src="assets/chanhee-profile.jpg"
+              alt="Photo of Chanhee"
+            />
+          </div>
 
-    <section class="educations"
-             id="educations">
-    </section>
+          <div class="flex-outer">
+            <div class="flex-9">
+              <section class="about" id="about"></section>
+              <div class="only-mobile">
+                <a href="mailto: chanhee13p@gmail.com" class="mobile-email">
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <span>chanhee13p@gmail.com</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex-3 no-mobile">
+              <div class="center">
+                <img
+                  class="image--cover center-content"
+                  src="assets/chanhee-profile.jpg"
+                  alt="Photo of Chanhee"
+                />
+              </div>
+              <ul class="tags">
+                <li class="tag">#Data_Visualization</li>
+                <li class="tag">#Web_Front_End</li>
+                <li class="tag">#Meachine_Learning</li>
+              </ul>
+            </div>
+          </div>
 
-    <section class="researches"
-             id="researches">
-    </section>
+          <div class="card-root" id="card-root"></div>
+        </div>
+      </section>
 
-    <section class="projects"
-             id="projects">
+      <section class="experiences" id="experiences"></section>
 
-    </section>
-  </main>
+      <section class="educations" id="educations"></section>
 
-  <footer>
-    <p id="last_update">Last Updated on 2020.09.03</p>
-    <p id="copyright">(c) 2020 Chan-Hee Park </p>
-  </footer>
+      <section class="researches" id="researches"></section>
 
+      <section class="projects" id="projects"></section>
+    </main>
 
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js"
-          crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-          crossorigin></script>
+    <footer>
+      <p id="last_update">Last updated on 2021.04.29</p>
+      <p id="copyright">© 2021 Chan-Hee Park</p>
+    </footer>
 
-  <!-- Load React components. -->
-  <script src="dist/data.js"></script>
-  <script src="dist/components.js"></script>
-  <script src="dist/index.js"></script>
-
-</body>
-
+    <!-- Load React components. -->
+    <script type="text/babel" src="src/data.jsx"></script>
+    <script type="text/babel" src="src/components.jsx"></script>
+    <script type="text/babel" src="src/app.jsx"></script>
+  </body>
 </html>

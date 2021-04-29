@@ -31,7 +31,7 @@
 /* tags */
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: var(--defult-font);
   line-height: var(--defult-height);
   color: var(--clova-black);
@@ -48,7 +48,6 @@ div {
 h1 {
   font-size: var(--title-font);
   line-height: var(--title-height);
-
 }
 
 h2 {
@@ -90,7 +89,7 @@ a {
   text-decoration: none;
   color: var(--dark-green);
   font-weight: 900;
-  padding-bottom: .25em;
+  padding-bottom: 0.25em;
   cursor: pointer;
   background: linear-gradient(to bottom, var(--green) 0%, var(--green) 100%);
   background-position: 0 100%;
@@ -99,7 +98,7 @@ a {
   text-decoration: none;
   padding: 0 3px;
   margin: 0 10px 0 0;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 span {
@@ -132,7 +131,7 @@ img {
 }
 
 .center {
-  width: 100%
+  width: 100%;
 }
 
 .center-content {
@@ -174,12 +173,10 @@ span.period {
   color: var(--dark-grey);
 }
 
-
-
 /* Navigation */
 nav {
   background-color: var(--bright-green);
-  padding: 20px 0 5px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -194,6 +191,10 @@ nav a {
 #intro {
   background-color: var(--bright-green);
   margin-bottom: 160px;
+}
+
+#intro .container {
+  padding-top: 24px;
 }
 
 #intro img.image--cover {
@@ -224,7 +225,7 @@ nav a {
   border-radius: 5px;
 }
 
-#intro #about>.container {
+#intro #about > .container {
   width: 90%;
   margin: 0;
   padding: 24px 0;
@@ -242,7 +243,7 @@ nav a {
   max-width: 520px;
   background-color: var(--dark-blue);
   color: var(--beige);
-  font-family: 'Noto Serif KR', serif;
+  font-family: "Noto Serif KR", serif;
   margin: -10px 0 0 0;
   position: absolute;
   border-radius: 15px;
@@ -376,7 +377,7 @@ footer {
   max-width: 100%;
   width: 100%;
   text-align: center;
-  margin: 0 0 50px 0;
+  margin: 0 0 75px 0;
 }
 
 footer p {
