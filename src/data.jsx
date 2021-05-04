@@ -222,7 +222,7 @@ const Data = {
         "Seongmin Mun",
         "Kyungwon Lee",
       ],
-      conf_title: "ocial Science History Association",
+      conf_title: "Social Science History Association",
       conf_short: "SSHA'18",
       short_conf: "ssha",
       year: "2018",
