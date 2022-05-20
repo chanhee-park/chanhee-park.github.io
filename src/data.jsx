@@ -24,7 +24,7 @@ const Data = {
       where: "우아한형제들, 데이터프로덕트TF",
       status: "Web FE Developer",
       href: "https://www.woowahan.com/",
-      period: "2022.08 - 재직 중",
+      period: "2021.08 - 재직 중",
       story: [
         `우아한형제들 웹프론트개발그룹의 데이터프로덕트TF에서 근무하고 있습니다. 
           데이터 조회와 분석, 관리를 위한 웹 기반 서비스를 개발합니다. 
