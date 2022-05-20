@@ -1,13 +1,65 @@
+// App
+function App() {
+  return (
+    <div>
+      <nav class="navbar" id="nav">
+        <div class="menu">
+          <a class="item" href="#experiences">
+            Experiences
+          </a>
+          <a class="item" href="#educations">
+            Educations
+          </a>
+          <a class="item" href="#researches">
+            Researches
+          </a>
+          <a
+            class="item"
+            href="assets/chanhee-resume.pdf"
+            target="_blank"
+            onClick={() => {
+              alert(
+                "이 링크의 이력서는 2021년 5월에 마지막으로 업데이트 되었습니다."
+              );
+            }}
+          >
+            Resume
+          </a>
+          <a class="item" target="_blank" href="https://www.linkedin.com/in/chanhee-park">
+            LinkedIn
+          </a>
+        </div>
+      </nav>
+      <main>
+        <Intro about={Data.about} />
+        <Container title="Work Experiences" className="experiences">
+          <Experiences experiences={Data.experiences} />
+        </Container>
+        <Container title="Educations" className="educations">
+          <Educations educations={Data.educations} />
+        </Container>
+        <Container title="Researches" className="researches">
+          <Researches researches={Data.researches} />
+        </Container>
+      </main>
+      <footer>
+        <p id="last_update">Last updated on 2022.05.20</p>
+        <p id="copyright">© 2022 Chan-Hee Park</p>
+      </footer>
+    </div>
+  );
+}
+
 // Common
 function Container(props) {
+  const { className, title, children } = props;
   return (
-    <div className="container">
-      <h2 className="section_title">{props.title}</h2>
-      {props.description && (
-        <p className="descriptsion section_description">{props.description}</p>
-      )}
-      {props.content}
-    </div>
+    <section className={className}>
+      <div className="container">
+        <h2 className="section_title">{title}</h2>
+        <div className="section_content">{children}</div>
+      </div>
+    </section>
   );
 }
 
@@ -25,6 +77,54 @@ function Card(props) {
   );
 }
 
+// Intro
+function Intro(props) {
+  const { about } = props;
+  return (
+    <section class="intro" id="intro">
+      <div class="container">
+        <h1 class="name">Chan-Hee Park</h1>
+        <div class="center">
+          <img
+            class="image--cover only-mobile center-content"
+            src="assets/chanhee-profile.jpg"
+            alt="Photo of Chanhee"
+          />
+        </div>
+        <div class="flex-outer">
+          <div class="flex-9">
+            <section class="about" id="about">
+              <About about={about} />
+            </section>
+            <div class="only-mobile">
+              <a href="mailto: chanhee13p@gmail.com" class="mobile-email">
+                <i class="fas fa-envelope fa-fw"></i>
+                <span>chanhee13p@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex-3 no-mobile">
+            <div class="center">
+              <img
+                class="image--cover center-content"
+                src="assets/chanhee-profile.jpg"
+                alt="Photo of Chanhee"
+              />
+            </div>
+            <ul class="tags">
+              <li class="tag">#Web_Front_End</li>
+              <li class="tag">#Data_Analytics</li>
+            </ul>
+          </div>
+        </div>
+        <Card
+          title={Data.introCard.title}
+          paragraphs={Data.introCard.paragraphs}
+        />
+      </div>
+    </section>
+  );
+}
 // About
 function About(props) {
   return _.map(props.about, (p, i) => <p key={i}>{p}</p>);
@@ -36,11 +136,22 @@ function Experiences(props) {
     return (
       <li key={"experience" + i}>
         <span className="status">{experience["status"]}</span>
-        <a className="whereiwas" href={experience["href"]} target="_blank">
+        <a
+          className="whereiwas"
+          href={experience["href"]}
+          target="_blank"
+          onClick={() => {
+            if (!experience["href"]) {
+              alert("현재 회사 홈페이지 이용이 불가능합니다. 죄송합니다.");
+            }
+          }}
+        >
           {experience["where"]}
         </a>
         <span className="period">{experience["period"]}</span>
-        <p>{experience["story"]}</p>
+        {experience["story"].map((paragraph, i) => {
+          return <p key={`experience-${i}`}>{paragraph}</p>;
+        })}
       </li>
     );
   });
@@ -76,8 +187,11 @@ function Researches(props) {
             <h3 className="research_title">{research["title"]}</h3>
             <Authors authors={research["authors"]} />
             <div className="conf_title">
-              {research["conf_title"]} (
-              <strong>{research["conf_short"]}</strong>), {research["year"]}.
+              {research["conf_title"]}
+              {research["conf_short"] && (
+                <strong>{research["conf_short"]}</strong>
+              )}
+              , {research["year"]}.
             </div>
             <Materials
               project={research}
@@ -91,40 +205,6 @@ function Researches(props) {
                 fileName={fileName}
                 fileType={thumbType}
                 projectType="researches"
-              />
-            }
-          </div>
-        </div>
-      </li>
-    );
-  });
-  return <ul className="items">{listItems}</ul>;
-}
-
-// Projects
-function Projects(props) {
-  const listItems = _.map(props.projects, (project, i) => {
-    const fileName = project["id"];
-    const thumbType = project["gif"] ? "gif" : "png";
-    return (
-      <li key={i} className="projectItem">
-        <div className="flex-outer">
-          <div className="flex-8 text-zone">
-            <h3 className="project_title">{project["title"]}</h3>
-            <div className="project_year"> {project["year"]}</div>
-            <div className="project_description"> {project["description"]}</div>
-            <Materials
-              project={project}
-              fileName={fileName}
-              projectType="projects"
-            />
-          </div>
-          <div className="flex-4 image-zone">
-            {
-              <Thumbnail
-                fileName={fileName}
-                fileType={thumbType}
-                projectType="projects"
               />
             }
           </div>
@@ -155,16 +235,6 @@ function Materials(props) {
       {project["video"] && (
         <a href={fileNameWithDir + "-video.mp4"} target="_blank">
           Video
-        </a>
-      )}
-      {project["code"] && (
-        <a href={project["code"]} target="_blank">
-          Code
-        </a>
-      )}
-      {project["site"] && (
-        <a href={project["site"]} target="_blank">
-          Site
         </a>
       )}
     </div>

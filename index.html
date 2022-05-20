@@ -2,13 +2,11 @@
 <html>
   <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8" />
-
     <title>Chan-Hee Park</title>
-
     <meta name="description" content="Chan-Hee Park" />
     <meta
       name="keywords"
-      content="Chanhee Park, Chanhee, Chan-Hee Park, Chan-Hee, 박찬희, Ajou University, data, visualization, information visualization, visual analytics, machine learning, deep learning, HCI"
+      content="Chanhee Park, Chanhee, Chan-Hee Park, Chan-Hee, 박찬희, Ajou University, Ajou, 아주대, Hanyang University, Hanyang, 한양대 data, visualization, analytics, 데이터, 시각화, 애널리틱스"
     />
     <meta name="author" content="Chan-Hee Park" />
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -20,7 +18,6 @@
       content="데이터 시각화 연구자 & 웹 프론트엔드 개발자"
     />
     <meta property="og:image" content="assets/webpage-preview.jpg" />
-
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap"
       rel="stylesheet"
@@ -33,93 +30,21 @@
     />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/style.mobile.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://img.icons8.com/dusk/64/000000/user-male.png"
-    />
-
+    <link rel="icon" type="image/png" href="assets/icon/user-male.png" />
     <!-- Libs -->
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js" ></script>
     <script
-      src="https://unpkg.com/react@16/umd/react.production.min.js"
       crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
     ></script>
     <script
-      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
       crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js" ></script>
   </head>
-
   <body>
-    <nav class="navbar" id="nav">
-      <div class="menu">
-        <a class="item" href="#experiences">Experiences</a>
-        <a class="item" href="#educations">Educations</a>
-        <a class="item" href="#researches">Researches</a>
-        <a class="item" href="assets/chanhee-resume.pdf" target="_blank"
-          >Resume</a
-        >
-      </div>
-    </nav>
-
-    <main>
-      <section class="intro" id="intro">
-        <div class="container">
-          <h1 class="name">Chan-Hee Park</h1>
-          <div class="center">
-            <img
-              class="image--cover only-mobile center-content"
-              src="assets/chanhee-profile.jpg"
-              alt="Photo of Chanhee"
-            />
-          </div>
-
-          <div class="flex-outer">
-            <div class="flex-9">
-              <section class="about" id="about"></section>
-              <div class="only-mobile">
-                <a href="mailto: chanhee13p@gmail.com" class="mobile-email">
-                  <i class="fas fa-envelope fa-fw"></i>
-                  <span>chanhee13p@gmail.com</span>
-                </a>
-              </div>
-            </div>
-            <div class="flex-3 no-mobile">
-              <div class="center">
-                <img
-                  class="image--cover center-content"
-                  src="assets/chanhee-profile.jpg"
-                  alt="Photo of Chanhee"
-                />
-              </div>
-              <ul class="tags">
-                <li class="tag">#Data_Visualization</li>
-                <li class="tag">#Web_Front_End</li>
-                <li class="tag">#Meachine_Learning</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card-root" id="card-root"></div>
-        </div>
-      </section>
-
-      <section class="experiences" id="experiences"></section>
-
-      <section class="educations" id="educations"></section>
-
-      <section class="researches" id="researches"></section>
-
-      <section class="projects" id="projects"></section>
-    </main>
-
-    <footer>
-      <p id="last_update">Last updated on 2021.04.29</p>
-      <p id="copyright">© 2021 Chan-Hee Park</p>
-    </footer>
-
+    <div id="root"></div>
     <!-- Load React components. -->
     <script type="text/babel" src="src/data.jsx"></script>
     <script type="text/babel" src="src/components.jsx"></script>
