@@ -337,7 +337,7 @@ function Researches(props) {
             research["conf_short"] && React.createElement(
               "strong",
               null,
-              research["conf_short"]
+              `(${research["conf_short"]})`
             ),
             ", ",
             research["year"],

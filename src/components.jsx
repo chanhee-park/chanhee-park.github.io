@@ -193,7 +193,7 @@ function Researches(props) {
             <div className="conf_title">
               {research["conf_title"]}
               {research["conf_short"] && (
-                <strong>{research["conf_short"]}</strong>
+                <strong>{`(${research["conf_short"]})`}</strong>
               )}
               , {research["year"]}.
             </div>
