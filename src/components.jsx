@@ -3,7 +3,7 @@ function App() {
   return (
     <div>
       <nav class="navbar" id="nav">
-        <div class="menu">
+        <div class="menu no-mobile">
           <a class="item" href="#experiences">
             Experiences
           </a>
@@ -25,20 +25,24 @@ function App() {
           >
             Resume
           </a>
-          <a class="item" target="_blank" href="https://www.linkedin.com/in/chanhee-park">
+          <a
+            class="item"
+            target="_blank"
+            href="https://www.linkedin.com/in/chanhee-park"
+          >
             LinkedIn
           </a>
         </div>
       </nav>
       <main>
         <Intro about={Data.about} />
-        <Container title="Work Experiences" className="experiences">
+        <Container title="Work Experiences" cssId="experiences">
           <Experiences experiences={Data.experiences} />
         </Container>
-        <Container title="Educations" className="educations">
+        <Container title="Educations" cssId="educations">
           <Educations educations={Data.educations} />
         </Container>
-        <Container title="Researches" className="researches">
+        <Container title="Researches" cssId="researches">
           <Researches researches={Data.researches} />
         </Container>
       </main>
@@ -52,9 +56,9 @@ function App() {
 
 // Common
 function Container(props) {
-  const { className, title, children } = props;
+  const { cssId, title, children } = props;
   return (
-    <section className={className}>
+    <section id={cssId}>
       <div className="container">
         <h2 className="section_title">{title}</h2>
         <div className="section_content">{children}</div>

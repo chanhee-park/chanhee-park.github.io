@@ -2,14 +2,13 @@
   /* color - */
   --black: #1e1e1e;
   --grey: #b1b1b1;
-  --green: #05d686;
   --beige: #f4f0e6;
   --purple: #d9d9f3;
   --green: #9dd3a8;
   --bright-green: #ceefe4;
-  --dark-green: #053;
-  --dark-blue: #123;
-  --dark-grey: #555;
+  --dark-green: #005533;
+  --dark-blue: #112233;
+  --dark-grey: #555555;
   /* font-size */
   --small-font: 14px;
   --defult-font: 16px;
@@ -29,7 +28,6 @@
 }
 
 /* tags */
-
 body {
   font-family: "Noto Sans KR", sans-serif;
   font-size: var(--defult-font);
@@ -39,10 +37,6 @@ body {
   vertical-align: baseline;
   width: 100%;
   height: 100%;
-}
-
-div {
-  padding: 2px 0;
 }
 
 h1 {
@@ -290,14 +284,14 @@ nav a {
 }
 
 /* EXPERIENCES & EDUCATIONS */
-section.educations .status,
-section.experiences .status {
+section#educations .status,
+section#experiences .status {
   font-weight: 600;
   font-size: 1.15em;
 }
 
-section.educations {
-  background-color: var(--purple);
+section#educations {
+  background-color: var(--bright-green);
 }
 
 /* RESEARCHES*/
@@ -306,26 +300,26 @@ section.educations {
   color: var(--dark-grey);
 }
 
-section.researches .researchItem {
+section#researches .researchItem {
   margin: 30px 0;
   padding: 25px 0;
   border-bottom: 1px solid var(--beige);
 }
 
-section.researches li:nth-child(1) {
+section#researches li:nth-child(1) {
   margin-top: 0;
 }
 
-section.researches li:nth-last-child(1) {
+section#researches li:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-section.researches .conf_title {
+section#researches .conf_title {
   font-size: var(--small-font);
   color: var(--dark-grey);
 }
 
-section.researches .name {
+section#researches .name {
   padding: 0;
   margin: 0 0 5px 0;
   font-size: var(--small-font);
@@ -333,28 +327,28 @@ section.researches .name {
   font-weight: 100;
 }
 
-section.researches .my-name {
+section#researches .my-name {
   color: var(--dark-green);
   font-weight: 900;
 }
 
-section.researches .materials {
+section#researches .materials {
   font-size: var(--small-font);
 }
 
-section.researches .text-zone,
-section.researches .image-zone {
+section#researches .text-zone,
+section#researches .image-zone {
   margin-top: 0;
 }
 
-section.researches .paper_thumbnail {
+section#researches .paper_thumbnail {
   width: 100%;
   height: 100%;
   padding: 0 0 0 20px;
 }
 
-section.researches .paper_thumbnail img,
-section.researches .paper_thumbnail video {
+section#researches .paper_thumbnail img,
+section#researches .paper_thumbnail video {
   width: 100%;
   min-width: 300px;
   max-width: 600px;
