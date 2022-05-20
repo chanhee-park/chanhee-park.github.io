@@ -74,7 +74,7 @@ const Data = {
     },
     {
       where: "(주) 더더랩",
-      status: "Web FE Developer (Membership & Intern)",
+      status: "Web FE Developer (Membership & Freelancer)",
       href: undefined,
       period: "2017.05 - 2019.09",
       story: [

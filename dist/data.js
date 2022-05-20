@@ -55,7 +55,7 @@ const Data = {
           웹 서비스 개발 외에도 서비스 기획, 운영, 평가 업무 등을 진행했습니다. `, `* 주당 10 ~ 15시간 내외로 근무했습니다.`]
   }, {
     where: "(주) 더더랩",
-    status: "Web FE Developer (Membership & Intern)",
+    status: "Web FE Developer (Membership & Freelancer)",
     href: undefined,
     period: "2017.05 - 2019.09",
     story: [`학교의 현장실습 프로그램으로 파견되어 인연을 맺었습니다. 파견 기간 종료 이후에도 2년간 프로젝트 단위로 프리랜서처럼 함께했습니다. 
