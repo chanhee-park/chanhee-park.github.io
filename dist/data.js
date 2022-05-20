@@ -37,7 +37,7 @@ const Data = {
         웹 프론트엔드 개발, UI/UX 리서치, 데이터 분석 및 시각화 등을 맡았습니다.`, `주요 기술 스택: TypeScript, React(+Hook), Material-UI, Adobe XD`]
   }, {
     where: "UC Davis VIDI Labs",
-    status: "Visualization Researcher (Visting Researcher)",
+    status: "Visualization Researcher (Visiting Researcher)",
     href: "https://vidi.cs.ucdavis.edu/",
     period: "2020.03 - 2020.08",
     story: [`캘리포니아 주립대학 데이비스 캠퍼스 컴퓨터공학과의 데이터 시각화 연구실 VIDI Labs에서 방문연구원으로 근무했습니다. 

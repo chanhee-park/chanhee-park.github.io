@@ -48,7 +48,7 @@ const Data = {
     },
     {
       where: "UC Davis VIDI Labs",
-      status: "Visualization Researcher (Visting Researcher)",
+      status: "Visualization Researcher (Visiting Researcher)",
       href: "https://vidi.cs.ucdavis.edu/",
       period: "2020.03 - 2020.08",
       story: [
