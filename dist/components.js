@@ -8,7 +8,7 @@ function App() {
       { "class": "navbar", id: "nav" },
       React.createElement(
         "div",
-        { "class": "menu" },
+        { "class": "menu no-mobile" },
         React.createElement(
           "a",
           { "class": "item", href: "#experiences" },
@@ -38,7 +38,11 @@ function App() {
         ),
         React.createElement(
           "a",
-          { "class": "item", target: "_blank", href: "https://www.linkedin.com/in/chanhee-park" },
+          {
+            "class": "item",
+            target: "_blank",
+            href: "https://www.linkedin.com/in/chanhee-park"
+          },
           "LinkedIn"
         )
       )
@@ -49,17 +53,17 @@ function App() {
       React.createElement(Intro, { about: Data.about }),
       React.createElement(
         Container,
-        { title: "Work Experiences", className: "experiences" },
+        { title: "Work Experiences", cssId: "experiences" },
         React.createElement(Experiences, { experiences: Data.experiences })
       ),
       React.createElement(
         Container,
-        { title: "Educations", className: "educations" },
+        { title: "Educations", cssId: "educations" },
         React.createElement(Educations, { educations: Data.educations })
       ),
       React.createElement(
         Container,
-        { title: "Researches", className: "researches" },
+        { title: "Researches", cssId: "researches" },
         React.createElement(Researches, { researches: Data.researches })
       )
     ),
@@ -82,10 +86,10 @@ function App() {
 
 // Common
 function Container(props) {
-  const { className, title, children } = props;
+  const { cssId, title, children } = props;
   return React.createElement(
     "section",
-    { className: className },
+    { id: cssId },
     React.createElement(
       "div",
       { className: "container" },
