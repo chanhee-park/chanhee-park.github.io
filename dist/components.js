@@ -28,17 +28,17 @@ function App() {
           "a",
           {
             "class": "item",
-            href: "assets/chanhee-resume.pdf",
+            href: "assets/cv.pdf",
             target: "_blank"
           },
-          "Resume"
+          "CV(PDF)"
         ),
         React.createElement(
           "a",
           {
             "class": "item",
-            target: "_blank",
-            href: "https://www.linkedin.com/in/chanhee-park"
+            href: "https://www.linkedin.com/in/chanhee-park",
+            target: "_blank"
           },
           "LinkedIn"
         )
@@ -70,7 +70,7 @@ function App() {
       React.createElement(
         "p",
         { id: "last_update" },
-        "Last updated on 2022.05.20"
+        "Last updated on 2022.09.09"
       ),
       React.createElement(
         "p",
