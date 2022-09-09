@@ -15,15 +15,15 @@ function App() {
           </a>
           <a
             class="item"
-            href="assets/chanhee-resume.pdf"
+            href="assets/cv.pdf"
             target="_blank"
           >
-            Resume
+            CV(PDF)
           </a>
           <a
             class="item"
-            target="_blank"
             href="https://www.linkedin.com/in/chanhee-park"
+            target="_blank"
           >
             LinkedIn
           </a>
@@ -42,7 +42,7 @@ function App() {
         </Container>
       </main>
       <footer>
-        <p id="last_update">Last updated on 2022.05.20</p>
+        <p id="last_update">Last updated on 2022.09.09</p>
         <p id="copyright">© 2022 Chan-Hee Park</p>
       </footer>
     </div>
