@@ -16,8 +16,8 @@ const Data = {
   },
   about: [`웹 프론트엔드 개발자 박찬희입니다. 
     데이터 분석, 조회, 관리를 위한 웹 기반 데이터 프로덕트 분야에 강점이 있습니다. 
-    서비스의 성장을 위해서는 데이터를 기반으로한 의사결정이 필요하다고 생각합니다. 
-    다양한 직군의 사람들이 데이터를 자유롭게 가지고 놀 수 있도록 돕는 도구를 만드는데 관심이 많습니다.`, `데이터에서 아이디어를 발견하도록 만드는 일에 보람을 느낍니다. 
+    위해서 데이터를 기반으로한 의사결정이 서비스를 성장시킨다고 생각합니다. 
+    다양한 직군의 사람들이 데이터를 자유롭게 가지고 놀 수 있도록 돕는데 관심이 많습니다.`, `데이터에서 아이디어를 발견하도록 만드는 일에 보람을 느낍니다. 
     효과적인 데이터 분석 시스템을 만들기 위해 웹 프론트엔드와 데이터 과학 분야를 공부하고 있습니다.`],
   experiences: [{
     where: "우아한형제들, 데이터프로덕트TF",
@@ -26,7 +26,7 @@ const Data = {
     period: "2021.08 - 재직 중",
     story: [`우아한형제들 웹프론트개발그룹의 데이터프로덕트TF에서 근무하고 있습니다. 
           데이터 조회와 분석, 관리를 위한 웹 기반 서비스를 개발합니다. 
-          우아한형제들의 여러 서비스에서 모인 데이터를 바탕으로 고객 만족도를 높일 수 있는 방안을 고민합니다.`, `주요 기술 스택 (자주 사용): Javascript, Typescript, React(Hook, ContextAPI, Redux, Redux-saga), Vue(Vuex), Cypress, React-testing-library, Storybook, SQL, Redash, Zeppelin, Git.`, `기술 스택 (가끔 사용): Material UI, Figma, Python, Pandas, Tableau, Jenkins.`, `주요 협업 도구: Slack, Notion, Jira, Confluence Wiki, GitLab, Zoom ...`]
+          우아한형제들의 여러 서비스에서 모인 데이터를 바탕으로 고객 만족도를 높일 수 있는 방안을 고민합니다.`]
   }, {
     where: "Naver Clova AI, NSML Team",
     status: "Web FE Developer (Intern)",
@@ -34,7 +34,7 @@ const Data = {
     period: "2020.09 - 2020.12",
     story: [`네이버 클로바 AI의 NSML(Naver Smart Machine Learning)팀은 머신러닝 연구자를 돕는 플랫폼을 개발합니다.
         이곳에서 저는 머신러닝 실무자의 개발을 돕기 위한 위한 웹 기반 플랫폼을 만들었습니다.
-        웹 프론트엔드 개발, UI/UX 리서치, 데이터 분석 및 시각화 등을 맡았습니다.`, `주요 기술 스택: TypeScript, React(+Hook), Material-UI, Adobe XD`]
+        웹 프론트엔드 개발, UI/UX 리서치, 데이터 분석 및 시각화 등을 맡았습니다.`]
   }, {
     where: "UC Davis VIDI Labs",
     status: "Visualization Researcher (Visiting Researcher)",

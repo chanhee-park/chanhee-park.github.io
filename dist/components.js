@@ -29,10 +29,7 @@ function App() {
           {
             "class": "item",
             href: "assets/chanhee-resume.pdf",
-            target: "_blank",
-            onClick: () => {
-              alert("이 링크의 이력서는 2021년 5월에 마지막으로 업데이트 되었습니다.");
-            }
+            target: "_blank"
           },
           "Resume"
         ),
