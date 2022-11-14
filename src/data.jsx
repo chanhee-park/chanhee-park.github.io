@@ -56,7 +56,7 @@ const Data = {
       ],
     },
     {
-      where: "아주대학교 미디어학과 대학특성사업단",
+      where: "아주대학교 미디어학과 대학특성화사업단",
       status: "Web FE Developer (Part-Time)",
       href: "https://ace.ajou.ac.kr/ace/",
       period: "2018.03 - 2019.08",
