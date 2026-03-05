@@ -40,3 +40,10 @@
 - **불필요한 렌더링 방지**: React 컴포넌트에서 매 렌더마다 새 객체·함수를 생성하는 패턴을 피한다.
 
 ---
+
+## Active Technologies
+- TypeScript 5.x (strict mode), Node.js 20 LTS + React 18, React DOM 18, Vite 5, ESLint 9, Prettier 3, `@vitejs/plugin-react` (001-modernize-portfolio)
+- 정적 TypeScript 데이터 파일 (`src/data/*.ts`), 런타임 스토리지 없음 (001-modernize-portfolio)
+
+## Recent Changes
+- 001-modernize-portfolio: Added TypeScript 5.x (strict mode), Node.js 20 LTS + React 18, React DOM 18, Vite 5, ESLint 9, Prettier 3, `@vitejs/plugin-react`
