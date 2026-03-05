@@ -61,6 +61,12 @@ node_modules/
 node_modules/*
 jspm_packages/
 
+# Vite build output
+dist/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
 # Typescript v1 declaration files
 typings/
 

@@ -1,0 +1,23 @@
+:root {
+  /* color */
+  --black: #1e1e1e;
+  --grey: #b1b1b1;
+  --beige: #f4f0e6;
+  --purple: #d9d9f3;
+  --green: #9dd3a8;
+  --bright-green: #ceefe4;
+  --dark-green: #005533;
+  --dark-blue: #112233;
+  --dark-grey: #555555;
+
+  /* font-size */
+  --small-font: 14px;
+  --default-font: 16px;
+  --large-font: 20px;
+  --subtitle-font: 28px;
+  --title-font: 36px;
+
+  /* line-height */
+  --default-height: 1.66;
+  --title-height: 1.16;
+}

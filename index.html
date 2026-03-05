@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head profile="http://www.w3.org/2005/10/profile">
+<!doctype html>
+<html lang="ko">
+  <head>
     <meta charset="UTF-8" />
-    <title>Chan-Hee Park</title>
-    <meta name="description" content="Chan-Hee Park" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박찬희의 포트폴리오</title>
+    <meta name="description" content="데이터 프로덕트에 강점이 있는 웹 프론트엔드 개발자" />
     <meta
       name="keywords"
       content="Chanhee Park, Chanhee, Chan-Hee Park, Chan-Hee, 박찬희, Ajou University, Ajou, 아주대, Hanyang University, Hanyang, 한양대 data, visualization, analytics, 데이터, 시각화, 애널리틱스"
     />
     <meta name="author" content="Chan-Hee Park" />
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:site_name" content="Chan-Hee Park" />
     <meta property="og:title" content="박찬희의 포트폴리오" />
-    <meta
-      property="og:description"
-      content="데이터 프로덕트에 강점이 있는 웹 프론트엔드 개발자"
-    />
-    <meta property="og:image" content="assets/webpage-preview.jpg" />
+    <meta property="og:description" content="데이터 프로덕트에 강점이 있는 웹 프론트엔드 개발자" />
+    <meta property="og:image" content="/assets/webpage-preview.jpg" />
+    <meta property="og:type" content="website" />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap"
       rel="stylesheet"
@@ -28,26 +25,10 @@
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/style.mobile.css" />
-    <link rel="icon" type="image/png" href="assets/icon/user-male.png" />
-    <!-- Libs -->
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js" ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react@17/umd/react.production.min.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js" ></script>
+    <link rel="icon" type="image/png" href="/assets/icon/user-male.png" />
   </head>
   <body>
     <div id="root"></div>
-    <!-- Load React components. -->
-    <script type="text/babel" src="src/data.jsx"></script>
-    <script type="text/babel" src="src/components.jsx"></script>
-    <script type="text/babel" src="src/app.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
