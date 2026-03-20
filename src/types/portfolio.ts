@@ -12,6 +12,15 @@ export interface Experience {
   link?: string;
 }
 
+export interface Project {
+  id: string;
+  name: string;
+  company: string;
+  period: string;
+  summary: string;
+  highlights: string[];
+}
+
 export interface Education {
   id: string;
   school: string;
@@ -19,6 +28,7 @@ export interface Education {
   major: string;
   period: Period;
   advisor?: string;
+  description?: string[];
 }
 
 export type MaterialType = 'pdf' | 'poster' | 'video' | 'slides' | 'demo';

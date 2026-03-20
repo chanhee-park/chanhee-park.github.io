@@ -2,21 +2,27 @@ import type { Research } from '../types/portfolio';
 
 export const researches: Research[] = [
   {
-    id: 'ajma-visml-2022',
-    title:
-      'Analytics System for Machine Learning Model: Focusing on Visual Analysis Methods to Explore the Effect of Changes in Input Variables on Model Prediction',
-    authors: ['Chanhee Park'],
-    venue: '아주대학교 석사 학위 논문',
-    year: 2022,
-    thumbnail: 'assets/researches/2022-ajma-visml-thumb.png',
+    id: 'kiise-interpretable-ml-2023',
+    title: '해석가능한 머신러닝을 위한 시각적 분석 시스템 제안',
+    authors: ['Chanhee Park', 'Kyunwon Lee'],
+    venue: 'Journal of KIISE (정보과학회논문지)',
+    year: 2023,
     materials: [
-      { type: 'pdf', url: 'assets/researches/2022-ajma-visml.pdf', visible: true },
+      { type: 'pdf', url: 'assets/researches/2023-kiise-interpretable-ml.PDF', visible: true },
     ],
   },
   {
-    id: 'adr-summ-2021',
+    id: 'ajma-visml-2022',
     title:
-      'A Study on Interface Design to Provide Effective Meeting Summary Information: Focused on Narrative Chart and Topic Map Visualization',
+      '머신러닝 모델 해석 시스템: 입력 변수 변화가 모델 예측에 미치는 영향을 탐색하는 시각적 분석 방법을 중심으로',
+    authors: ['Chanhee Park'],
+    venue: '아주대학교 석사 학위 논문',
+    year: 2022,
+    materials: [{ type: 'pdf', url: 'assets/researches/2022-ajma-visml.pdf', visible: true }],
+  },
+  {
+    id: 'adr-summ-2021',
+    title: '효과적인 회의 요약정보 제공을 위한 인터페이스 디자인 연구',
     authors: [
       'Suhyun Lim',
       'Chanhee Park',
@@ -26,34 +32,25 @@ export const researches: Research[] = [
       'Soojung Lee',
       'Kyunwon Lee',
     ],
-    venue: 'Archives of Design Research (ADR 34(1))',
+    venue: 'Archives of Design Research',
     year: 2021,
-    thumbnail: 'assets/researches/2021-adr-summ-thumb.png',
-    materials: [
-      { type: 'pdf', url: 'assets/researches/2021-adr-summ.pdf', visible: true },
-    ],
+    materials: [{ type: 'pdf', url: 'assets/researches/2021-adr-summ.pdf', visible: true }],
   },
   {
     id: 'ei-visml-2020',
     title: 'A Visualization System for Performance Analysis of Image Classification Models',
     authors: ['Chanhee Park', 'Hyojin Kim', 'Kyungwon Lee'],
-    venue: "IS&T International Symposium on Electronic Imaging (EI'20)",
+    venue: 'IS&T International Symposium on Electronic Imaging',
     year: 2020,
-    thumbnail: 'assets/researches/2020-ei-visml-thumb.png',
-    materials: [
-      { type: 'pdf', url: 'assets/researches/2020-ei-visml.pdf', visible: true },
-    ],
+    materials: [{ type: 'pdf', url: 'assets/researches/2020-ei-visml.pdf', visible: true }],
   },
   {
     id: 'mdpi-color-2019',
     title: 'A Study of Colormaps in Network Visualization',
     authors: ['Raja Mubashar Karim', 'Oh-Hyun Kwon', 'Chanhee Park', 'Kyungwon Lee'],
-    venue: 'MDPI Applied Sciences (Appl. Sci. 2019, 9(20))',
+    venue: 'MDPI Applied Sciences',
     year: 2019,
-    thumbnail: 'assets/researches/2019-mdpi-color-thumb.png',
-    materials: [
-      { type: 'pdf', url: 'assets/researches/2019-mdpi-color.pdf', visible: true },
-    ],
+    materials: [{ type: 'pdf', url: 'assets/researches/2019-mdpi-color.pdf', visible: true }],
   },
   {
     id: 'vis-summ-2019',
@@ -67,14 +64,22 @@ export const researches: Research[] = [
       'Soojung Lee',
       'Kyunwon Lee',
     ],
-    venue: "IEEE Visualization Conference (InfoVis'19)",
+    venue: 'IEEE Visualization Conference',
     year: 2019,
-    thumbnail: 'assets/researches/2019-vis-summ-thumb.gif',
     materials: [
       { type: 'pdf', url: 'assets/researches/2019-vis-summ.pdf', visible: true },
       { type: 'poster', url: 'assets/researches/2019-vis-summ-poster.pdf', visible: true },
       { type: 'video', url: 'assets/researches/2019-vis-summ-video.mp4', visible: true },
     ],
+  },
+  {
+    id: 'pvis-comdia-2019',
+    title:
+      'ComDia+: An Interactive Visual Analytics System for Comparing, Diagnosing, and Improving Multiclass Classifiers',
+    authors: ['Chanhee Park', 'Jina Lee', 'Hyunwoo Han', 'Kyungwon Lee'],
+    venue: 'IEEE Pacific Visualization Symposium',
+    year: 2019,
+    materials: [{ type: 'pdf', url: 'assets/researches/2019-pvis-comdia.pdf', visible: true }],
   },
   {
     id: 'pvis-gitvis-2019',
@@ -89,29 +94,17 @@ export const researches: Research[] = [
       'Hyunwoo Han',
       'Kyungwon Lee',
     ],
-    venue: "IEEE Pacific Visualization Symposium (PacificVis'19)",
+    venue: 'IEEE Pacific Visualization Symposium',
     year: 2019,
-    thumbnail: 'assets/researches/2019-pvis-gitvis-thumb.gif',
     materials: [
       { type: 'pdf', url: 'assets/researches/2019-pvis-gitvis.pdf', visible: true },
       { type: 'video', url: 'assets/researches/2019-pvis-gitvis-video.mp4', visible: true },
     ],
   },
   {
-    id: 'pvis-comdia-2019',
-    title:
-      'ComDia+: An Interactive Visual Analytics System for Comparing, Diagnosing, and Improving Multiclass Classifiers',
-    authors: ['Chanhee Park', 'Jina Lee', 'Hyunwoo Han', 'Kyungwon Lee'],
-    venue: "IEEE Pacific Visualization Symposium (PacificVis'19)",
-    year: 2019,
-    thumbnail: 'assets/researches/2019-pvis-comdia-thumb.png',
-    materials: [
-      { type: 'pdf', url: 'assets/researches/2019-pvis-comdia.pdf', visible: true },
-    ],
-  },
-  {
     id: 'ssha-congress-2018',
-    title: 'A visual analysis of power relations among people on time-series data using network visualization',
+    title:
+      'A Visual Analysis of Power Relations Among People on Time-Series Data Using Network Visualization',
     authors: [
       'Gyeongcheol Choi',
       'Taerin Yoon',
@@ -123,16 +116,13 @@ export const researches: Research[] = [
       'Seongmin Mun',
       'Kyungwon Lee',
     ],
-    venue: "Social Science History Association (SSHA'18)",
+    venue: 'Social Science History Association',
     year: 2018,
-    thumbnail: 'assets/researches/2018-ssha-congress-thumb.png',
-    materials: [
-      { type: 'pdf', url: 'assets/researches/2018-ssha-congress.pdf', visible: true },
-    ],
+    materials: [{ type: 'pdf', url: 'assets/researches/2018-ssha-congress.pdf', visible: true }],
   },
   {
     id: 'vis-gitvis-2018',
-    title: 'An Interactive Visualization To Help You Gain Knowledge from Authoritative Developers',
+    title: 'An Interactive Visualization to Help You Gain Knowledge from Authoritative Developers',
     authors: [
       'Chanhee Park',
       'Sungjun Do',
@@ -142,9 +132,8 @@ export const researches: Research[] = [
       'Hyunwoo Han',
       'Kyungwon Lee',
     ],
-    venue: "IEEE Visualization Conference (InfoVis'18)",
+    venue: 'IEEE Visualization Conference',
     year: 2018,
-    thumbnail: 'assets/researches/2018-vis-gitvis-thumb.png',
     materials: [
       { type: 'pdf', url: 'assets/researches/2018-vis-gitvis.pdf', visible: true },
       { type: 'poster', url: 'assets/researches/2018-vis-gitvis-poster.pdf', visible: true },
