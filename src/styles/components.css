@@ -89,7 +89,7 @@ section#experiences {
 }
 
 section#educations {
-  background-color: white;
+  background-color: var(--bright-green);
 }
 
 /* Projects */
@@ -142,7 +142,7 @@ section#projects li.projectItem:last-child {
 }
 
 section#researches {
-  background-color: var(--bright-green);
+  background-color: white;
 }
 
 section#researches .researchItem {
@@ -187,6 +187,7 @@ section#researches .materials a {
 
 /* Footer */
 footer {
+  background-color: white;
   max-width: 100%;
   width: 100%;
   text-align: center;
