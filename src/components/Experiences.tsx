@@ -28,9 +28,7 @@ function Experiences({ experiences }: Props) {
             {experience.period.start} -{' '}
             {experience.period.end === 'current' ? '재직 중' : experience.period.end}
           </span>
-          {experience.description.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
+          <p>{experience.description.join(' ')}</p>
         </li>
       ))}
     </ul>

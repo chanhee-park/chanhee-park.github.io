@@ -17,6 +17,7 @@ function Educations({ educations }: Props) {
             {education.period.start} -{' '}
             {education.period.end === 'current' ? '재학 중' : education.period.end}
           </span>
+          {education.description && <p>{education.description.join(' ')}</p>}
         </li>
       ))}
     </ul>

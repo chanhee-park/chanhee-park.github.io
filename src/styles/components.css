@@ -10,40 +10,6 @@
   padding: 48px 0 28px 0;
 }
 
-.center {
-  width: 100%;
-}
-
-.center-content {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.flex-outer {
-  display: flex;
-}
-
-.flex-3 {
-  flex: 3;
-}
-
-.flex-4 {
-  flex: 4;
-}
-
-.flex-6 {
-  flex: 6;
-}
-
-.flex-8 {
-  flex: 8;
-}
-
-.flex-9 {
-  flex: 9;
-}
-
 .section_title {
   font-size: var(--subtitle-font);
 }
@@ -55,7 +21,7 @@ span.period {
 
 /* Navigation */
 nav {
-  background-color: var(--bright-green);
+  background-color: white;
   padding: 20px 0;
   text-align: center;
 }
@@ -68,40 +34,12 @@ nav a {
 
 /* Introduction */
 #intro {
-  background-color: var(--bright-green);
-  margin-bottom: 160px;
+  background-color: white;
+  margin-bottom: 0;
 }
 
 #intro .container {
   padding-top: 24px;
-}
-
-#intro img.image--cover {
-  -webkit-box-shadow: 10px 7px 1px 1px var(--green);
-  -moz-box-shadow: 10px 7px 1px 1px var(--green);
-  box-shadow: 10px 7px 1px 1px var(--green);
-  width: 180px;
-  border-radius: 20px;
-}
-
-.tags {
-  list-style: none;
-  margin: 15px 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.tags li {
-  float: left;
-}
-
-.tag {
-  font-size: var(--small-font);
-  background-color: var(--green);
-  margin: 5px;
-  padding: 1px 5px;
-  border-radius: 5px;
 }
 
 #intro #about {
@@ -114,58 +52,29 @@ nav a {
   display: none;
 }
 
-/* Card */
-.card {
-  width: 50%;
-  min-width: 480px;
-  max-width: 520px;
-  background-color: var(--dark-blue);
-  color: var(--beige);
-  margin: -10px 0 0 0;
-  position: absolute;
-  border-radius: 15px;
-  -webkit-box-shadow: 3px 3px 10px 1px rgba(55, 55, 55, 0.5);
-  -moz-box-shadow: 3px 3px 10px 1px rgba(55, 55, 55, 0.5);
-  box-shadow: 3px 3px 10px 1px rgba(55, 55, 55, 0.5);
-}
-
-.card .container {
-  margin: 0;
-  padding: 24px 36px;
-  width: 100%;
-}
-
-.card_title {
-  font-size: var(--large-font);
-  font-weight: 900;
-}
-
-.card_letter {
+.intro-links {
   font-size: var(--small-font);
-  font-weight: 200;
-  color: var(--grey);
-  padding: 10px 0;
+  color: var(--dark-grey);
+  padding: 6px 0 0 0;
 }
 
-.card_letter p {
+.intro-links p {
   margin: 0;
-  padding: 5px 0;
+  padding: 6px 0;
 }
 
-.card_letter i,
-.card_letter a {
-  color: var(--beige);
-  text-decoration: none;
-  padding: 3px 0;
+.intro-links a,
+.intro-links i {
+  font-size: var(--small-font);
 }
 
-.card_letter a:hover {
-  color: var(--black);
-  font-weight: 900;
+.intro-links a {
+  margin-right: 12px;
+  padding: 0 1px;
 }
 
-.card_letter i {
-  margin-top: 2px;
+.intro-links i {
+  margin-top: 1px;
 }
 
 /* Experiences & Educations */
@@ -175,8 +84,55 @@ section#experiences .status {
   font-size: 1.15em;
 }
 
-section#educations {
+section#experiences {
   background-color: var(--bright-green);
+}
+
+section#educations {
+  background-color: white;
+}
+
+/* Projects */
+section#projects {
+  background-color: white;
+}
+
+.projectItem {
+  margin: 0 0 14px 0;
+  padding: 8px 0 10px 0;
+  border-bottom: 1px solid rgba(17, 34, 51, 0.08);
+}
+
+section#projects li.projectItem:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.projectTitle {
+  margin: 0 0 2px 0;
+  font-size: 1.15em;
+}
+
+.projectMeta {
+  margin: 0 0 4px 0;
+  font-size: var(--small-font);
+  color: var(--dark-grey);
+}
+
+.projectItem p {
+  margin: 4px 0 6px 0;
+}
+
+.projectHighlights {
+  margin: 6px 0 0 0;
+  padding: 0 0 0 18px;
+}
+
+.projectHighlights li {
+  list-style: disc;
+  padding: 2px 0;
+  margin: 0;
 }
 
 /* Researches */
@@ -185,9 +141,13 @@ section#educations {
   color: var(--dark-grey);
 }
 
+section#researches {
+  background-color: var(--bright-green);
+}
+
 section#researches .researchItem {
-  margin: 30px 0;
-  padding: 25px 0;
+  margin: 0;
+  padding: 18px 0;
   border-bottom: 1px solid var(--beige);
 }
 
@@ -221,24 +181,8 @@ section#researches .materials {
   font-size: var(--small-font);
 }
 
-section#researches .text-zone,
-section#researches .image-zone {
-  margin-top: 0;
-}
-
-section#researches .paper_thumbnail {
-  width: 100%;
-  height: 100%;
-  padding: 0 0 0 20px;
-}
-
-section#researches .paper_thumbnail img,
-section#researches .paper_thumbnail video {
-  width: 100%;
-  min-width: 300px;
-  max-width: 600px;
-  border: 1px solid var(--beige);
-  margin: auto;
+section#researches .materials a {
+  margin-right: 10px;
 }
 
 /* Footer */
@@ -246,7 +190,7 @@ footer {
   max-width: 100%;
   width: 100%;
   text-align: center;
-  margin: 0 0 75px 0;
+  margin: 30px 0;
 }
 
 footer p {
