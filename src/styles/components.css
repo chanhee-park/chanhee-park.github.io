@@ -42,6 +42,10 @@ nav a {
   padding-top: 24px;
 }
 
+#intro .name {
+  font-size: 30px;
+}
+
 #intro #about {
   width: 90%;
   margin: 0;

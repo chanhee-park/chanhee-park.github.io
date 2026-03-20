@@ -1,5 +1,5 @@
 const about = [
-  `복잡한 데이터를 직관적인 사용자 경험으로 전환하는 웹 프론트엔드 엔지니어입니다.
+  `복잡한 데이터를 직관적인 사용자 경험으로 전환하는 웹 프론트엔드 엔지니어 박찬희입니다.
   MLOps, 데이터 시각화, 챗봇 등 데이터 중심 제품에서 사용자 요구사항을 이해하고 제품 가치를 높여왔습니다.`,
   `성능 최적화, UX 개선, 시각화 구현, 공통 기능 모듈화, 협업 프로세스 정리에 강점이 있습니다.
   AI 제품과 운영 도구가 더 빠르고 이해하기 쉬운 경험을 제공하도록 만드는 일에 관심이 많습니다.`,
@@ -9,7 +9,7 @@ function Intro() {
   return (
     <section className="intro" id="intro">
       <div className="container">
-        <h1 className="name">Chan-Hee Park</h1>
+        <h1 className="name">박찬희 | 웹 프론트엔드 엔지니어</h1>
         <section className="about" id="about">
           {about.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
