@@ -85,7 +85,13 @@ nav a {
 section#educations .status,
 section#experiences .status {
   font-weight: 600;
-  font-size: 1.15em;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+section#educations .whereiwas,
+section#experiences .whereiwas {
+  font-weight: 700;
 }
 
 section#experiences {
@@ -115,7 +121,9 @@ section#projects li.projectItem:last-child {
 
 .projectTitle {
   margin: 0 0 2px 0;
-  font-size: 1.15em;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 700;
 }
 
 .projectMeta {
@@ -151,8 +159,15 @@ section#researches {
 
 section#researches .researchItem {
   margin: 0;
-  padding: 18px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--beige);
+}
+
+section#researches .research_title {
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 600;
+  margin: 0 0 4px 0;
 }
 
 section#researches li:nth-child(1) {
@@ -187,6 +202,7 @@ section#researches .materials {
 
 section#researches .materials a {
   margin-right: 10px;
+  font-weight: 700;
 }
 
 /* Footer */
@@ -195,7 +211,7 @@ footer {
   max-width: 100%;
   width: 100%;
   text-align: center;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 footer p {
