@@ -18,7 +18,7 @@ export const projects: Project[] = [
     id: 'makinarocks-chatbot',
     name: 'Enterprise Chatbot Platform',
     company: 'MakinaRocks',
-    period: '2025 - 현재',
+    period: '2024 - 현재',
     summary:
       '납품형 챗봇 프론트엔드의 공통 구조를 설계하고 제품별 앱을 빠르게 납품할 수 있는 개발 체계를 만들었습니다. 요구사항 분석부터 UX 설계, 개발, 배포까지 폭넓게 담당했습니다.',
     highlights: [
