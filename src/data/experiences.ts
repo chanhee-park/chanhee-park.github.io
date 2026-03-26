@@ -3,7 +3,7 @@ import type { Experience } from '../types/portfolio';
 export const experiences: Experience[] = [
   {
     id: 'makinarocks-2023',
-    role: 'Frontend Engineer',
+    role: 'Web Frontend Engineer',
     company: 'MakinaRocks',
     period: { start: '2023.05', end: 'current' },
     description: [
@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 'woowahan-2021',
-    role: 'Web FE Developer',
+    role: 'Web Frontend Engineer',
     company: '우아한형제들',
     period: { start: '2021.08', end: '2023.05' },
     description: [
