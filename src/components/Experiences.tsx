@@ -9,7 +9,6 @@ function Experiences({ experiences }: Props) {
     <ul className="items">
       {experiences.map((experience) => (
         <li key={experience.id}>
-          <span className="status">{experience.role}</span>
           <a
             className="whereiwas"
             href={experience.link}
@@ -24,6 +23,7 @@ function Experiences({ experiences }: Props) {
           >
             {experience.company}
           </a>
+          <span className="status">{experience.role}</span>
           <span className="period">
             {experience.period.start} -{' '}
             {experience.period.end === 'current' ? '재직 중' : experience.period.end}
