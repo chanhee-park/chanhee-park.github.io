@@ -9,10 +9,10 @@ function Educations({ educations }: Props) {
     <ul className="items">
       {educations.map((education) => (
         <li key={education.id}>
-          <span className="status">
+          <span className="whereiwas">
             {education.degree}, {education.major}
           </span>
-          <span className="whereiwas">{education.school}</span>
+          <span className="status">{education.school}</span>
           <span className="period">
             {education.period.start} -{' '}
             {education.period.end === 'current' ? '재학 중' : education.period.end}
