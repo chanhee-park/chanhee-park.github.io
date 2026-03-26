@@ -84,14 +84,16 @@ nav a {
 /* Experiences & Educations */
 section#educations .status,
 section#experiences .status {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: var(--small-font);
   line-height: 1.45;
+  color: var(--dark-grey);
 }
 
 section#educations .whereiwas,
 section#experiences .whereiwas {
   font-weight: 700;
+  font-size: var(--large-font);
 }
 
 section#experiences {
