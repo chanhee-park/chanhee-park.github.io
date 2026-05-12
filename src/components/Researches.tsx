@@ -29,7 +29,7 @@ function Researches({ researches }: Props) {
                     key={material.type}
                     href={material.url}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     aria-label={`${material.type.toUpperCase()} 다운로드: ${research.title}`}
                   >
                     {material.type.charAt(0).toUpperCase() + material.type.slice(1)}

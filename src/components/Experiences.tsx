@@ -13,7 +13,8 @@ function Experiences({ experiences }: Props) {
             className="whereiwas"
             href={experience.link}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            aria-label={`${experience.company} 홈페이지 열기 (새 창)`}
             onClick={(e) => {
               if (!experience.link) {
                 e.preventDefault();

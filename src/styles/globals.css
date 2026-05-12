@@ -86,3 +86,51 @@ a:hover {
 img {
   width: 200px;
 }
+
+.skip-to-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  background: var(--dark-green);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0 0 6px 0;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.skip-to-content:focus,
+.skip-to-content:focus-visible {
+  transform: translateY(0);
+  background: var(--dark-green);
+  color: #ffffff;
+  outline: 3px solid var(--green);
+  outline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--dark-green);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .skip-to-content {
+    transition: none;
+  }
+}
