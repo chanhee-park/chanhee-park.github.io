@@ -21,11 +21,16 @@ function Intro() {
           </p>
           <p>
             <a href="mailto:chanhee13p@gmail.com" aria-label="이메일: chanhee13p@gmail.com">
-              <i className="fas fa-envelope fa-fw" />
+              <i className="fas fa-envelope fa-fw" aria-hidden="true" />
               <span>chanhee13p@gmail.com</span>
             </a>
-            <a href="https://www.linkedin.com/in/chanhee-park/" target="_blank" rel="noreferrer">
-              <i className="fab fa-linkedin fa-fw" />
+            <a
+              href="https://www.linkedin.com/in/chanhee-park/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn 프로필 열기 (새 창)"
+            >
+              <i className="fab fa-linkedin fa-fw" aria-hidden="true" />
               <span>LinkedIn</span>
             </a>
           </p>
