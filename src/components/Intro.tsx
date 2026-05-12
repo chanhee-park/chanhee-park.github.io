@@ -28,10 +28,6 @@ function Intro() {
               <i className="fab fa-linkedin fa-fw" />
               <span>LinkedIn</span>
             </a>
-            <a href="assets/cv-2025-08-31.pdf" target="_blank" rel="noreferrer">
-              <i className="fas fa-file-pdf fa-fw" />
-              <span>CV</span>
-            </a>
           </p>
         </div>
       </div>

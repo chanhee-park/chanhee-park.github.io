@@ -76,7 +76,7 @@ function App() {
         </section>
       </main>
       <footer>
-        <p id="last_update">Last updated on 2026.03.20 using CV dated 2025.08.31</p>
+        <p id="last_update">Last updated on 2026.03.20</p>
         <p id="copyright">© 2026 Chan-Hee Park</p>
       </footer>
     </div>
